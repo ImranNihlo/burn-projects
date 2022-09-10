@@ -15,32 +15,110 @@ import BlueMonkey from "../../assets/images/Blue.png";
 import GreenMonkey from "../../assets/images/Green.png";
 import TeamMember1 from "../../assets/images/Team1.png";
 import TeamMember2 from "../../assets/images/Team2.png";
+import TeamMember3 from "../../assets/images/Team3.png";
+import TeamMember4 from "../../assets/images/Team4.png";
+import TeamMember5 from "../../assets/images/Team5.png";
+import TeamMember6 from "../../assets/images/Team6.png";
+import TeamMember7 from "../../assets/images/Team7.png";
+
+import Advisiors1 from "../../assets/images/advisiors1.png";
+import Advisiors2 from "../../assets/images/advisiors2.png"
+import Advisiors3 from "../../assets/images/advisiors3.png"
+import Advisiors4 from "../../assets/images/advisiors4.png"
+import Advisiors5 from "../../assets/images/advisiors5.png"
 
 function Team() {
   const [activeIndex, setActiveIndex] = React.useState(0);
+  const [activeSwipe, setActiveSwipe] = React.useState(0);
 
   const carousel__data = [
     {
       id: 1,
-      activeTitle: "AlexandEr meuer",
-      text: "FitBurn is going to disrupt the whole fitness industry with the world’s first burn-to-earn",
+      activeTitle: "AlexandEr Meuer",
+      text: "CEO",
       image: BlueMonkey,
       activeImage: TeamMember2,
     },
     {
       id: 2,
       activeTitle: "Ferhat Kacmaz",
-      text: "FitBurn is going to disrupt the whole fitness industry with the world’s first burn-to-earn",
+      text: "CEO",
       image: BlueMonkey,
       activeImage: TeamMember1,
     },
     {
       id: 3,
       activeTitle: "Sebastian Menge",
-      text: "FitBurn is going to disrupt the whole fitness industry with the world’s first burn-to-earn",
+      text: "CEO",
       image: GreenMonkey,
-      activeImage: TeamMember1,
+      activeImage: TeamMember3,
     },
+    {
+      id: 4,
+      activeTitle: "Chris Oldfield",
+      text: "CEO",
+      image: BlueMonkey,
+      activeImage: TeamMember4,
+    },
+    {
+      id: 5,
+      activeTitle: "Shelbi Oldfield",
+      text: "HEAD OF MARKETING",
+      image: GreenMonkey,
+      activeImage: TeamMember5,
+    },
+    {
+      id: 6,
+      activeTitle: "Dincer Delen",
+      text: "Creative director",
+      image: BlueMonkey,
+      activeImage: TeamMember6,
+    },
+    {
+      id: 7,
+      activeTitle: "Praneet Kumar",
+      text: "Director-legal & compliance",
+      image: GreenMonkey,
+      activeImage: TeamMember7,
+    }
+  ];
+
+  const carousel__advisors = [
+    {
+      id: 1,
+      activeTitle: "Mr. Olympia",
+      text: "World's most prestigious fitness industry showcase event",
+      image: GreenMonkey,
+      activeImage: Advisiors1,
+    },
+    {
+      id: 2,
+      activeTitle: "Özlem Kaçmaz",
+      text: "Advisor",
+      image: BlueMonkey,
+      activeImage: Advisiors2,
+    },
+    {
+      id: 3,
+      activeTitle: "Mary Pedler",
+      text: "PR Advisor",
+      image: GreenMonkey,
+      activeImage: Advisiors3,
+    },
+    {
+      id: 4,
+      activeTitle: "Isculpt",
+      text: "Dubai-Based ems fitness studio Özlem Kaçmaz Mary Pedler Ralph Boschung",
+      image: BlueMonkey,
+      activeImage: Advisiors4,
+    },
+    {
+      id: 5,
+      activeTitle: "Ralph Boschung d2 driver",
+      text: "Strategic",
+      image: GreenMonkey,
+      activeImage: Advisiors5,
+    }
   ];
 
   return (
@@ -151,40 +229,132 @@ function Team() {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
-          <div className="team__advisors">
             <h2 className="team__title-advisors">Advisors</h2>
-            <div className="team__card-advisors relative">
-              <div className="team__card__wrapper">
-                <img src={TeamMember2} alt="team" />
-                <h3>Özlem Kaçmaz</h3>
-                <p>
-                  FitBurn is going to disrupt the whole fitness industry with
-                  the world’s first burn-to-earn
-                </p>
-                <img
-                  src={angle}
-                  alt="angle"
-                  className="absolute w-7 h-6 top-0 left-0"
-                />
-                <img
-                  src={angle}
-                  alt="angle"
-                  className="absolute w-7 h-6 top-0 right-0 rotate-90"
-                />
-                <img
-                  src={angle}
-                  alt="angle"
-                  className="absolute w-7 h-6 bottom-0 right-0 rotate-180"
-                />
-                <img
-                  src={angle}
-                  alt="angle"
-                  className="absolute w-7 h-6 bottom-0 left-0 -rotate-90"
-                />
-              </div>
-            </div>
+            <Swiper
+              effect={"flip "}
+              grabCursor={true}
+              navigation
+              centeredSlides={true}
+              slidesPerView={"auto"}
+              coverflowEffect={{
+                scale: 0.5,
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              }}
+              pagination={false}
+              modules={[EffectFlip, Pagination, Navigation]}
+              className="myTeamSwiper"
+              onSlideChange={(swiper) => {
+                setActiveSwipe(swiper.activeIndex);
+              }}
+              initialSlide="1"
+            >
+              {carousel__advisors.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <div
+                    className={
+                      item.id === activeSwipe + 1
+                        ? "team__card-active"
+                        : "team__card"
+                    }
+                  >
+                    <div
+                      className={
+                        item.id === activeSwipe + 1 ? "team__card__wrapper" : ""
+                      }
+                    >
+                      <img
+                        src={
+                          item.id === activeSwipe + 1
+                            ? item.activeImage
+                            : item.image
+                        }
+                        alt="fire"
+                      />
+                      <h3>
+                        {item.id === activeSwipe + 1
+                          ? item.activeTitle
+                          : item.activeTitle}
+                      </h3>
+                      <p>{item.id === activeSwipe + 1 ? item.text : ""}</p>
+                    </div>
+                  </div>
+                  <img
+                    src={angle}
+                    alt="angle"
+                    className={
+                      item.id === activeSwipe + 1
+                        ? "absolute w-7 h-6 top-0 left-0"
+                        : "hidden"
+                    }
+                  />
+                  <img
+                    src={angle}
+                    alt="angle"
+                    className={
+                      item.id === activeSwipe + 1
+                        ? "absolute w-7 h-6 top-0 right-0 rotate-90"
+                        : "hidden"
+                    }
+                  />
+                  <img
+                    src={angle}
+                    alt="angle"
+                    className={
+                      item.id === activeSwipe + 1
+                        ? "absolute w-7 h-6 bottom-0 right-0 rotate-180"
+                        : "hidden"
+                    }
+                  />
+                  <img
+                    src={angle}
+                    alt="angle"
+                    className={
+                      item.id === activeSwipe + 1
+                        ? "absolute w-7 h-6 bottom-0 left-0 -rotate-90"
+                        : "hidden"
+                    }
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
+          {/*<div className="team__advisors">*/}
+          {/*  <h2 className="team__title-advisors">Advisors</h2>*/}
+          {/*  <div className="team__card-advisors relative">*/}
+          {/*    <div className="team__card__wrapper">*/}
+          {/*      <img src={TeamMember2} alt="team" />*/}
+          {/*      <h3>Özlem Kaçmaz</h3>*/}
+          {/*      <p>*/}
+          {/*        FitBurn is going to disrupt the whole fitness industry with*/}
+          {/*        the world’s first burn-to-earn*/}
+          {/*      </p>*/}
+          {/*      <img*/}
+          {/*        src={angle}*/}
+          {/*        alt="angle"*/}
+          {/*        className="absolute w-7 h-6 top-0 left-0"*/}
+          {/*      />*/}
+          {/*      <img*/}
+          {/*        src={angle}*/}
+          {/*        alt="angle"*/}
+          {/*        className="absolute w-7 h-6 top-0 right-0 rotate-90"*/}
+          {/*      />*/}
+          {/*      <img*/}
+          {/*        src={angle}*/}
+          {/*        alt="angle"*/}
+          {/*        className="absolute w-7 h-6 bottom-0 right-0 rotate-180"*/}
+          {/*      />*/}
+          {/*      <img*/}
+          {/*        src={angle}*/}
+          {/*        alt="angle"*/}
+          {/*        className="absolute w-7 h-6 bottom-0 left-0 -rotate-90"*/}
+          {/*      />*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
       </div>
     </>
