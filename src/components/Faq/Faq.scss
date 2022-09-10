@@ -1,0 +1,71 @@
+.faq__bg {
+  background-image: url("../../assets/images/faq-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: calc(0% - 0px) calc(0% - 50px);
+  padding-top: 150px;
+}
+
+.faq__wrapper {
+  background-image: url("../../assets/images/evolution.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+}
+
+.faq__wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -100;
+  width: 790px;
+  height: 480px;
+  background-image: url("../../assets/images/line-frame.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(12deg) translateX(-200px) translateY(250px);
+}
+
+.faq__wrapper::before {
+  content: "faq";
+  position: absolute;
+  top: -300px;
+  left: 0;
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 550px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    90.06deg,
+    #443636 2.01%,
+    rgba(155, 124, 124, 0) 49.1%,
+    #000000 99.97%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  opacity: 0.5;
+}
+
+.faq {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 224, 188, 0.264) 0%,
+    rgba(255, 232, 205, 0.064) 99.79%
+  );
+  backdrop-filter: blur(116px);
+  width: 541px;
+  margin: 0 auto;
+  margin-top: 181px;
+  clip-path: polygon(0 0, 91% 0, 100% 11%, 100% 100%, 0 100%, 0% 50%);
+  padding: 40px 0;
+  padding-right: 51px;
+}

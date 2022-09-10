@@ -1,0 +1,61 @@
+.navbar__wrapper {
+  background-color: transparent;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.navbar__scroll {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.nav__left,
+.nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__left {
+  img {
+    position: relative;
+    top: -5px;
+  }
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 42px;
+}
+
+.nav__item {
+  a {
+    font-family: "Trap";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 104%;
+    color: #d6d6d6;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+}
+
+.nav__item ~ .nav__item {
+  margin-left: 32px;
+}

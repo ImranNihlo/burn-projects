@@ -1,0 +1,24 @@
+.news__card-btn {
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 100px);
+  width: 200px;
+  margin: 0 auto;
+  height: 41px;
+  background: linear-gradient(180deg, #4e4c4a 0%, rgba(47, 43, 38, 0.69) 100%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 14px 43px 11px 29px;
+  clip-path: polygon(5% 0, 100% 0, 88% 100%, 0% 100%);
+
+  span {
+    font-family: "Trap";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 104%;
+    color: #ffffff;
+  }
+}

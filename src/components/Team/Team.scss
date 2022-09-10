@@ -1,0 +1,203 @@
+.team__wrapper {
+  position: relative;
+  padding: 300px 0;
+  padding-bottom: 650px;
+  background-image: url("../../assets/images/hero-bg90.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(0% - 100px) calc(0% - 150px);
+}
+
+.team::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 790px;
+  height: 480px;
+  background-image: url("../../assets/images/line-frame.png");
+  background-repeat: no-repeat;
+  background-position: calc(0% - 150px) calc(0% + 50px);
+  background-size: cover;
+}
+
+.team__title {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  width: 529px;
+  margin: 0 auto;
+  margin-top: 31px;
+
+  .team__title-primary {
+    color: #ef1000;
+    margin: 0 10px;
+    position: relative;
+  }
+
+  .team__title-primary::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../assets/images/top-fire.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 128px;
+    height: 103px;
+    top: -90px;
+    left: -5px;
+  }
+
+  p {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.team__subtitle {
+  width: 120px;
+  margin: 0 auto;
+}
+
+.team__card__wrapper {
+  background-image: url("../../assets/images/card-line.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.team__card {
+  width: 346px;
+  height: 454px;
+  padding: 50px 0;
+  background-color: transparent;
+  transform: scale(0.5);
+
+  img {
+    width: 227px;
+    height: 227px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 104%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 39px;
+  }
+}
+
+.team__card-active {
+  width: 346px;
+  height: 454px;
+  background-image: url("../../assets/images/team-carousel-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 26px 29px 38px 29px;
+  transition: all 0.3s ease-in-out;
+
+  img {
+    width: 286px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 104%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 31px;
+  }
+
+  p {
+    font-family: "Trap";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 104%;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.7;
+    margin-top: 22px;
+  }
+}
+
+.team__card-advisors {
+  width: 346px;
+  height: 454px;
+  background-image: url("../../assets/images/team-carousel-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 26px 29px 38px 29px;
+  margin: 40px auto;
+  // filter: drop-shadow(0px 0px 150px #ef1000);
+
+  h3 {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 104%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 31px;
+  }
+
+  p {
+    font-family: "Trap";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 104%;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.7;
+    margin-top: 22px;
+  }
+}
+
+.team__title-advisors {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  width: 529px;
+  margin: 0 auto;
+  margin-top: 139px;
+}
+
+.myTeamSwiper {
+  width: 100%;
+  margin-top: 79px;
+  background-color: transparent;
+  // filter: drop-shadow(0px 200px 150px rgba(0, 111, 241, 0.5));
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 346px;
+    height: 454px;
+    background-color: transparent;
+  }
+}

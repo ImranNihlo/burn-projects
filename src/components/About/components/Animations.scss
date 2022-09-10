@@ -1,0 +1,129 @@
+$animationSpeed: 15s;
+
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll-back {
+  0% {
+    transform: translateX(calc(-250px * 7));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// Styling
+.slider__red {
+  background-color: #ef1000;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  transform: rotate(5deg) skew(5deg);
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(350px * 14);
+  }
+
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 43px;
+    width: 350px;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+
+      font-family: "Trap";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 104%;
+      text-transform: uppercase;
+      color: #ffffff;
+
+      svg {
+        position: relative;
+        top: -3px;
+      }
+    }
+  }
+}
+
+.slider__white {
+  background-color: #ffffff;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  transform: rotate(-6deg) skew(-6deg);
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    animation: scroll-back $animationSpeed linear infinite;
+    display: flex;
+    width: calc(350px * 14);
+  }
+
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 43px;
+    width: 350px;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+
+      font-family: "Trap";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 104%;
+      text-transform: uppercase;
+      color: #222;
+
+      svg {
+        position: relative;
+        top: -3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.social {
+  position: absolute;
+  top: 500px;
+  right: 0;
+  padding: 20px 10px;
+  clip-path: polygon(40% 0%, 100% 0, 100% 50%, 100% 97%, 0 98%, 0 10%);
+  img {
+    margin-top: 10px;
+  }
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(27.6679px);
+  width: 44px;
+
+  a:hover {
+    img {
+      transition: all 0.3s ease-in-out;
+      transform: rotate(360deg);
+      color: red;
+    }
+  }
+}

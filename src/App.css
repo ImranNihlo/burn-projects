@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Trap";
+  font-weight: 300;
+  src: url("../font/Trap-Light.otf");
+}
+
+@font-face {
+  font-family: "Trap";
+  font-weight: 400;
+  src: url("../font/Trap-Regular.otf");
+}
+
+@font-face {
+  font-family: "Trap";
+  font-weight: 500;
+  src: url("../font/Trap-Medium.otf");
+}
+
+@font-face {
+  font-family: "Trap";
+  font-weight: 600;
+  src: url("../font/Trap-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Trap";
+  font-weight: 700;
+  src: url("../font/Trap-Bold.otf");
+}
+
+@font-face {
+  font-family: "Trap";
+  font-weight: 800;
+  src: url("../font/Trap-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "Trap";
+  font-weight: 900;
+  src: url("../font/Trap-Black.otf");
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  font-weight: 400;
+  src: url("../font/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  font-weight: 800;
+  src: url("../font/MonumentExtended-Ultrabold.otf");
+}
+
+.app__container {
+  max-width: 1255px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.pending__page {
+  width: 300px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 60px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 150px);
+}

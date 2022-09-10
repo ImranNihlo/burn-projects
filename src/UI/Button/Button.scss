@@ -1,0 +1,52 @@
+.btn__box {
+  display: flex;
+}
+
+.button__wrap {
+  filter: drop-shadow(3px 3px #ef1000);
+  transition: all 0.3s ease;
+}
+
+.button__wrap:hover {
+  filter: drop-shadow(3px 3px yellow);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.btn__primary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #4e4c4a 0%, rgba(47, 43, 38, 0.69) 100%);
+  backdrop-filter: blur(240px);
+  padding: 14px 50px 11px 29px;
+  clip-path: polygon(10% 0, 100% 0%, 79% 99%, 0% 100%);
+
+  span {
+    font-family: "Trap";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 104%;
+    color: #ffffff;
+  }
+}
+
+.button__icon {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background-image: url("../../assets/images/button-img-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: -6px;
+}
+
+.button__icon-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

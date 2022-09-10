@@ -1,0 +1,87 @@
+.mySwiper {
+  width: 700px;
+  margin-top: 226px;
+  background: transparent;
+  transition: all 0.5s ease;
+  .swiper-slide {
+    transition: all 0.5s ease;
+    background-position: center;
+    background-size: cover;
+    width: 245px;
+    height: 245px;
+    background-color: transparent;
+  }
+}
+
+.carousel__card {
+  background-image: url("../../assets/images/carousel-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 245px;
+  height: 245px;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+
+  img {
+    width: 100px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  h3 {
+    width: 127px;
+    margin: 0 auto;
+    font-family: "Trap";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 104%;
+    text-align: center;
+    color: #f8f8f8;
+    margin-top: 30px;
+  }
+}
+
+.carousel__card-active {
+  background-image: url("../../assets/images/carousel-card-bbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 245px;
+  height: 245px;
+  padding: 60px 0;
+  transform: scale(0.5);
+
+  img {
+    width: 100px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  h3 {
+    display: none;
+  }
+}
+
+.carousel__loading {
+  position: relative;
+  width: 204px;
+  height: 31px;
+  margin: 50px auto;
+  animation: loading 2s infinite;
+  animation-delay: 1s;
+  overflow: hidden;
+  background-image: url("../../assets/images/carousel/loading.png");
+}
+
+@keyframes loading {
+  0% {
+    height: 31px;
+    width: 50px;
+  }
+  100% {
+    height: 31px;
+    width: 204px;
+  }
+}

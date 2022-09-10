@@ -1,0 +1,111 @@
+.hero__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.hero__vector__bg {
+  background-image: url("../../assets/images/Hero-vector.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.hero__radial {
+  background-image: url("../../assets/images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(0% + 100px) calc(0% - 300px);
+}
+
+.hero__wrapper {
+  background-image: url("../../assets/images/Gorilla.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 780px;
+  position: relative;
+  top: 0px;
+  // filter: drop-shadow(0px 0px 250px #f01100);
+}
+
+.hero__content {
+  position: relative;
+  top: 480px;
+}
+
+.hero__title {
+  width: 505px;
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 124.5%;
+  text-transform: uppercase;
+  color: #fff;
+
+  .hero__title__primary {
+    color: #f01100;
+    margin-right: 10px;
+  }
+}
+
+.hero__subtitle {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 104%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.scroll__box {
+  width: 134px;
+  height: 134px;
+  background-image: url("../../assets/images/Scroll-circle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  left: calc(50% - 67px);
+  top: -90px;
+  cursor: pointer;
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll__text {
+  width: 134px;
+  font-family: "Trap";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 100%;
+  color: #f8f8f8;
+  position: relative;
+  bottom: 160px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+
+@keyframes rotation {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}

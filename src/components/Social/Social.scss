@@ -1,0 +1,85 @@
+.social__wrapper {
+  background-image: url("../../assets/images/hero-bg-red.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(0% - 100px) calc(0% - 200px);
+  padding-top: 100px;
+}
+
+.social__title {
+  font-family: "Monument Extended", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 160px;
+  background-color: transparent;
+}
+
+.social__box {
+  width: 738px;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url("../../assets/images/social-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 490px;
+
+  div {
+    animation: circle 8s linear infinite;
+    a {
+      font-family: "Trap";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 104%;
+      color: #ffffff;
+      background-image: url("../../assets/images/social-btn-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      button {
+        width: 177px;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        padding: 15px 25px;
+        border-radius: 135px;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #ef1000;
+        border: 2px solid #ef1000;
+      }
+    }
+  }
+
+  div:nth-child(1) {
+    animation-delay: 2s;
+  }
+
+  div:nth-child(2) {
+    animation-delay: 1s;
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(150px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

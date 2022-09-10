@@ -1,0 +1,137 @@
+.partners__wrapper {
+  padding: 100px 0;
+  padding-top: 0;
+  padding-bottom: 650px;
+  background-image: url("../../assets/images/partners-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(0% - 100px) calc(0% - 50px);
+  position: relative;
+}
+
+.partners__title-box {
+  width: 135px;
+  margin: 0 auto;
+  margin-top: 147px;
+}
+
+.partners__title {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 31px;
+}
+
+.partners__text {
+  font-family: "Trap";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 104%;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.9;
+  width: 433px;
+  margin: 26px auto;
+}
+
+.partners__actions {
+  width: 283px;
+  margin: 0 auto;
+  margin-top: 81px;
+}
+
+.swiper__partners {
+  width: 95%;
+  transform: rotate(6deg);
+  .swiper-slide {
+    margin-top: 85px;
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+
+.partners__card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(224.518px);
+  border-radius: 4.35957px;
+  width: 299px;
+  height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.partners__card-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 104%;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.agnles__dark {
+  display: none;
+}
+
+.partners__card:hover {
+  background: rgba(255, 255, 255, 1);
+  transition: all 0.5s ease;
+
+  transform: translateY(-50px);
+  clip-path: polygon(
+    7% 46%,
+    0 40%,
+    0 2%,
+    100% 0,
+    100% 38%,
+    94% 46%,
+    94% 62%,
+    100% 70%,
+    100% 100%,
+    0 100%,
+    0 74%,
+    7% 65%
+  );
+
+  .agnles__dark {
+    display: block;
+  }
+
+  .angles {
+    display: none;
+  }
+
+  .partners__card-name {
+    color: #000000;
+  }
+}
+
+.partners__coin {
+  position: absolute;
+  left: 60%;
+  top: 32%;
+}

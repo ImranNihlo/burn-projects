@@ -1,0 +1,93 @@
+.news__wrapper {
+  padding: 200px 0;
+  background-image: url("../../assets/images/news-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(0% - 100px) calc(0% - 100px);
+}
+
+.news__box::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 790px;
+  height: 480px;
+  background-image: url("../../assets/images/line-frame.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(180deg) translateX(-200px) translateY(200px);
+}
+
+.swiper__news {
+  width: 100%;
+  .swiper-slide {
+    width: 255px;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.news__title {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  width: 746px;
+  margin: 0 auto;
+  margin-top: 250px;
+
+  img {
+    margin: 0 10px;
+  }
+}
+
+.events__btns {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 31px;
+  button {
+    width: 145px;
+    height: 42px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 190, 114, 0.3) 0%,
+      rgba(255, 214, 166, 0.207) 100%
+    );
+    backdrop-filter: blur(541.885px);
+    font-family: "Trap";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 104%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f8f8f8;
+  }
+
+  .events__btn_wrapper {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .events__btn_wrapper:hover {
+    box-shadow: 1px 3px 3px red;
+  }
+
+  .btn__news {
+    clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 98%, 0 98%, 0 15%);
+  }
+  .btn__events {
+    clip-path: polygon(85% 0, 100% 16%, 100% 50%, 100% 98%, 0 98%, 0 0);
+  }
+}
