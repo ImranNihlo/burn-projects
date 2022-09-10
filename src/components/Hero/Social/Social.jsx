@@ -9,9 +9,9 @@ export default function Social() {
   return (
     <>
       <div className="social">
-        <a target="_blank" href="http://behance.com">
-          <img src={Behance} alt="behance" />
-        </a>
+        {/*<a target="_blank" href="http://behance.com">*/}
+        {/*  <img src={Behance} alt="behance" />*/}
+        {/*</a>*/}
         <a target="_blank" href="https://www.facebook.com/Fitburnio/">
           <img src={Facebook} alt="facebook" />
         </a>
