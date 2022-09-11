@@ -1,7 +1,8 @@
 .partners__wrapper {
-  padding: 100px 0;
-  padding-top: 0;
-  padding-bottom: 650px;
+  //padding: 100px 0;
+  //padding-top: 0;
+  //padding-bottom: 650px;
+  padding-bottom: 93px;
   background-image: url("../../assets/images/partners-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +13,7 @@
 .partners__title-box {
   width: 135px;
   margin: 0 auto;
-  margin-top: 147px;
+  padding-top: 142px;
 }
 
 .partners__title {
@@ -133,5 +134,5 @@
 .partners__coin {
   position: absolute;
   left: 60%;
-  top: 32%;
+  top: 62%;
 }

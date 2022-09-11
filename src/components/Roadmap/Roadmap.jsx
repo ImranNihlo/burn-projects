@@ -14,6 +14,7 @@ import evolution2 from "../../assets/images/roadmap/evolution-2.png";
 import evolution3 from "../../assets/images/roadmap/evolution-3.png";
 import evolution4 from "../../assets/images/roadmap/evolution-4.png";
 import evolution5 from "../../assets/images/roadmap/evolution-5.png";
+import line from "../../assets/images/line.png"
 
 import Button from "../../UI/Button/Button";
 
@@ -128,9 +129,9 @@ function Roadmap() {
                 alt="roadmap"
                 className="flex mx-auto"
                 style={{
-                  marginTop: `${roadmap[active - 1]?.mt}px`,
-                  width: `${roadmap[active - 1]?.imgWidth}px`,
-                  height: `${roadmap[active - 1]?.imgHeight}px`,
+                  //marginTop: `${roadmap[active - 1]?.mt}px`,
+                  //width: `${roadmap[active - 1]?.imgWidth}px`,
+                  //height: `${roadmap[active - 1]?.imgHeight}px`,
                 }}
               />
               <img
@@ -153,6 +154,9 @@ function Roadmap() {
                 alt="angle"
                 className="absolute w-7 h-6 bottom-0 left-0 -rotate-90"
               />
+            </div>
+            <div className="roadmap__line">
+              <img src={line} alt="line"/>
             </div>
             <div className="flex">
               <ul className="roadmap__number-list">

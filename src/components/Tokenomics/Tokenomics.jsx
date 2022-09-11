@@ -4,14 +4,23 @@ import Subtitle from "../../UI/Subtitle/Subtitle";
 import headImage from "../../assets/images/monkey-head.png";
 import exitIcon from "../../assets/icons/exit.svg";
 import Button from "../../UI/Button/Button";
+import coin from "../../assets/images/coin.png"
 
 function Tokenomics() {
   return (
     <div className="relative">
-      <div className="tokenomics__wrapper" data-aos="zoom-in" data-aos-duration = "3000">
+      <div className="tokenomics__wrapper">
         <div className="app__container">
           <div className="tokenomics" id="tokenomics">
             <div className="tokenomics__left">
+              <div className="tokenomics__icon" data-aos="zoom-in"
+                   data-aos-offset="200"
+                   data-aos-delay="50"
+                   data-aos-duration="2000"
+                   data-aos-easing="ease-in-out"
+              >
+                <img src={coin} alt="coin" className="coin"/>
+              </div>
               <div className="tokenomics__left-content">
                 <Subtitle>our token</Subtitle>
                 <div className="tokenomics__title">

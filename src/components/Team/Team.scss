@@ -1,7 +1,9 @@
 .team__wrapper {
   position: relative;
-  padding: 300px 0;
-  padding-bottom: 650px;
+  //padding: 300px 0;
+  padding-top: 150px;
+  //padding-bottom: 650px;
+  padding-bottom: 106px;
   background-image: url("../../assets/images/hero-bg90.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,7 +63,8 @@
 
 .team__subtitle {
   width: 120px;
-  margin: 0 auto;
+  //margin: 0 auto;
+  margin-left: 47%;
 }
 
 .team__card__wrapper {

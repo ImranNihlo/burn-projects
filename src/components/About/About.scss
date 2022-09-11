@@ -8,7 +8,8 @@
   background-image: url("../../assets/images/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 450px 0;
+  //padding: 450px 0;
+  padding-top: 135px;
   background-position: calc(0% + 200px) calc(0% - 140px);
 }
 
@@ -91,7 +92,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: calc(0% - 200px) calc(0% - 100px);
-  padding: 450px 0;
+  //padding: 450px 0;
+  padding-top: 100px;
 }
 
 .second__about-wrapper::after {
@@ -225,14 +227,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: calc(0% - 200px) calc(0% - 0px);
-  padding: 250px 0;
-  padding-bottom: 310px;
+  //padding: 250px 0;
+  //padding-bottom: 310px;
+  padding-top: 150px;
 }
 
 .gameplay {
   display: flex;
   justify-content: space-between;
-  padding: 150px 0;
+  //padding: 150px 0;
 }
 
 .gameplay__text {
@@ -282,7 +285,19 @@
   }
 }
 
+.gameplay__right {
+  position: relative;
+}
+
+.gameplay__phone {
+  position: absolute;
+  right: 280px;
+  top: 130px;
+}
+
 .gameplay__right-list {
+  position: inherit;
+  z-index: 8;
   list-style-type: none;
   padding: 0;
 

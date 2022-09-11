@@ -13,6 +13,7 @@ import "./About.scss";
 import AboutGamePlay from "./AboutGamePlay";
 import AnimationRed from "./components/AnimationRed";
 import AnimationWhite from "./components/AnimationWhite";
+import ReactFullpage from '@fullpage/react-fullpage'
 
 function About() {
   return (

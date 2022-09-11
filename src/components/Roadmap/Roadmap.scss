@@ -1,6 +1,6 @@
 .roadmap {
-  padding-bottom: 550px;
-  margin-bottom: 250px;
+  padding-bottom: 70px;
+  //margin-bottom: 250px;
   z-index: 999;
   background-image: url("../../assets/images/hero-bg-red.png");
   background-repeat: no-repeat;
@@ -39,12 +39,15 @@
 
 .roadmap__card {
   width: 528px;
-  height: 554px;
+  height: 550px;
+  display: flex;
+  align-items: center;
   background-image: url("../../assets/images/card-line.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transition: all 0.3s ease-in-out;
+  animation: ani 3s forwards;
+  //transition: all 0.3s ease-in-out;
 
   img {
     transition: all 0.3s ease;
@@ -52,6 +55,7 @@
 }
 
 .roadmap__number-list {
+  margin-right: 50px;
   ul {
     padding: 0;
   }
@@ -80,8 +84,9 @@
 }
 
 .roadmap__right {
-  margin-left: 105px;
-
+  width: 315px;
+  height: 190px;
+  animation: ani 3s forwards;
   h3 {
     font-family: "Monument Extended";
     font-style: normal;
@@ -107,6 +112,11 @@
   }
 }
 
+@keyframes ani {
+  0% {scale: 0}
+  100% {scale: 1.1}
+}
+
 .roadmap__active {
   background-color: #f01100;
 }
@@ -129,4 +139,10 @@
     color: #ffffff;
     opacity: 0.7;
   }
+}
+
+.roadmap__line {
+  width: 75px;
+  padding-top: 115px;
+  margin-left: 46px;
 }

@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: calc(0% - 350px) calc(0% - 50px);
-  padding: 200px 0;
+  //padding: 200px 0;
+  padding-top: 90px;
 }
 
 .tokenomics__wrapper::before {
@@ -25,20 +26,28 @@
   justify-content: space-between;
   gap: 10px;
   // filter: drop-shadow(0px 0px 150px #ef1000);
-  margin-bottom: 120px;
+  //margin-bottom: 120px;
+}
+
+.tokenomics__icon {
+  .coin {
+    scale: 1.4;
+    padding-top: 100px;
+  }
 }
 
 .tokenomics__left {
-  background-image: url("../../assets/images/coin.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 880px;
-  z-index: 111;
+  max-width: 780px;
+  //background-image: url("../../assets/images/coin.png");
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: cover;
+  //height: 880px;
+  //z-index: 111;
   // filter: drop-shadow(-100px 0px 150px #ef1000);
 
   .tokenomics__left-content {
-    margin-top: 800px;
+    margin-top: 50px;
   }
 
   .tokenomics__title {

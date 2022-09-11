@@ -1,6 +1,7 @@
 import React from "react";
 import gameplayLoading from "../../assets/images/loading.png";
 import Subtitle from "../../UI/Subtitle/Subtitle";
+import phone from "../../assets/images/fhone.png"
 
 function AboutGamePlay() {
   return (
@@ -41,6 +42,9 @@ function AboutGamePlay() {
               </div>
             </div>
             <div className="gameplay__right">
+              <div className="gameplay__phone">
+                <img src={phone} alt="phone"/>
+              </div>
               <ul className="gameplay__right-list">
                 <li>
                   <span>01</span>

@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: calc(0% - 100px) calc(0% - 200px);
-  padding-top: 100px;
+  padding-top: 160px;
 }
 
 .social__title {
@@ -15,19 +15,26 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 160px;
+  //margin-top: 160px;
   background-color: transparent;
+}
+
+.social__box-position {
+  position: relative;
 }
 
 .social__box {
   width: 738px;
-  height: 800px;
+  position: absolute;
+  bottom: 150px;
+  left: 200px;
+  //height: 800px;
   margin: 0 auto;
-  background-image: url("../../assets/images/social-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 490px;
+  //background-image: url("../../assets/images/social-bg.png");
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //background-position: center;
+  //padding-top: 490px;
 
   div {
     animation: circle 8s linear infinite;
@@ -82,4 +89,10 @@
   100% {
     transform: translateX(0px);
   }
+}
+
+.social-img {
+  width: 700px;
+  margin: auto;
+  margin-top: -100px;
 }

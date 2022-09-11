@@ -1,5 +1,5 @@
 .news__wrapper {
-  padding: 200px 0;
+  padding: 200px 0 63px 0;
   background-image: url("../../assets/images/news-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@
   .swiper-slide {
     width: 255px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 43px 0 70px 0;
     background-position: center;
     background-size: cover;
   }
@@ -43,7 +43,7 @@
   align-items: center;
   width: 746px;
   margin: 0 auto;
-  margin-top: 250px;
+  //margin-top: 250px;
 
   img {
     margin: 0 10px;
