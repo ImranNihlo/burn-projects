@@ -2,25 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="add146ef-f1a7-430f-9cc2-82489426b654" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projects.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Button/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/carousel/carousel-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/carousel/carousel-5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/AboutGamePlay.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutGamePlay.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Faq/Faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Faq/Faq.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/News/News.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Faq/Faq.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Faq/Faq.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Partners/Partners.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Partners/Partners.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Partners/Partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Partners/Partners.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Roadmap/Roadmap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Roadmap/Roadmap.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Roadmap/Roadmap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Roadmap/Roadmap.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Social/Social.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Social/Social.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Social/Social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Social/Social.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Team/Team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/Team.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Team/Team.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/Team.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Tokenomics/Tokenomics.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tokenomics/Tokenomics.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tokenomics/Tokenomics.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tokenomics/Tokenomics.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,23 +56,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662884260935</updated>
-      <workItem from="1662884264605" duration="13735000" />
+      <workItem from="1662884264605" duration="32962000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/About/About.jsx</url>
-          <line>20</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

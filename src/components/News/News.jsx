@@ -56,7 +56,13 @@ function News() {
     <div className="news__wrapper">
       <div className="relative">
         <div className="news__box">
-          <h2 className="news__title relative">
+          <h2 className="news__title relative"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+          >
             <span>News</span>
             <span className="relative">
               <img
@@ -84,6 +90,11 @@ function News() {
             pagination={false}
             modules={[FreeMode, Pagination]}
             className="swiper__news"
+            data-aos="flip-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
           >
             {news.map((item) => (
               <SwiperSlide key={item.id}>

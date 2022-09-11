@@ -20,13 +20,14 @@ import Button from "../../UI/Button/Button";
 
 function Roadmap() {
   const [active, setActive] = useState(1);
+
   const roadmap = [
     {
       id: 1,
       image: roadmap1,
       icon: evolution1,
       title: "Q1 2021",
-      text: "The Fit Burn idea was conceived. ",
+      text: "The Fit Burn idea was conceived.",
       list: [],
       frameWidht: "60",
       mt: "259",
@@ -66,7 +67,6 @@ function Roadmap() {
         "Whitepaper Release",
         "Mobile Application Beta Version Test",
         "NFT Reveal at Blockchain Economy Dubai Summit",
-
         "CoinMarketCap & CoinGecko Listing",
         "Brand & Tutorial Video Release",
         "Closing of Seed / VC Round",
@@ -120,10 +120,22 @@ function Roadmap() {
         <div className="flex justify-center" id="roadmap">
           <Subtitle>Our Way</Subtitle>
         </div>
-        <h2 className="roadmap__title mb-16">Roadmap</h2>
+        <h2 className="roadmap__title mb-16"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+        >Roadmap</h2>
         <div className="app__container">
           <div className="flex" key={roadmap[active - 1].id} timeout={500}>
-            <div className="roadmap__card relative px-[21px] py-[51px] ">
+            <div className="roadmap__card relative px-[21px] py-[51px] "
+                 data-aos="flip-left"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="1000"
+                 data-aos-easing="ease-in-out"
+            >
               <img
                 src={roadmap[active - 1].image}
                 alt="roadmap"
@@ -158,78 +170,82 @@ function Roadmap() {
             <div className="roadmap__line">
               <img src={line} alt="line"/>
             </div>
-            <div className="flex">
-              <ul className="roadmap__number-list">
-                <li className="flex items-center gap-10">
-                  <button
-                    className="btn__disabled"
-                    value="1"
-                    onClick={handleClick}
-                  >
-                    01
-                  </button>
-                </li>
-                <li className="flex items-center gap-10">
-                  <button
-                    className="btn__disabled"
-                    value="2"
-                    onClick={handleClick}
-                  >
-                    02
-                  </button>
-                </li>
-                <li className="flex items-center gap-10">
-                  <button
-                    className="btn__disabled"
-                    value="3"
-                    onClick={handleClick}
-                  >
-                    03
-                  </button>
-                </li>
-                <li className="flex items-center gap-10">
-                  <button
-                    className="btn__disabled"
-                    value="4"
-                    onClick={handleClick}
-                  >
-                    04
-                  </button>
-                </li>
-                <li className="flex items-center gap-10">
-                  <button
-                    className="btn__disabled"
-                    value="5"
-                    onClick={handleClick}
-                  >
-                    05
-                  </button>
-                </li>
-              </ul>
-              <CSSTransition timeout={400} classNames="list-transition">
-                <div className="roadmap__right">
-                  <img
-                    src={roadmap[active - 1].icon}
-                    alt="roadmap first"
-                    width="73"
-                    height="114"
-                  />
-                  <h3>{roadmap[active - 1].title}</h3>
-                  {roadmap[active - 1].text.length > 0 ? (
-                    <p>{roadmap[active - 1]?.text}</p>
-                  ) : null}
-                  <ul>
+            <ul className="roadmap__number-list">
+              <li className="flex items-center gap-10">
+                <button
+                  className="btn__disabled"
+                  value="1"
+                  onClick={handleClick}
+                >
+                  01
+                </button>
+              </li>
+              <li className="flex items-center gap-10">
+                <button
+                  className="btn__disabled"
+                  value="2"
+                  onClick={handleClick}
+                >
+                  02
+                </button>
+              </li>
+              <li className="flex items-center gap-10">
+                <button
+                  className="btn__disabled"
+                  value="3"
+                  onClick={handleClick}
+                >
+                  03
+                </button>
+              </li>
+              <li className="flex items-center gap-10">
+                <button
+                  className="btn__disabled"
+                  value="4"
+                  onClick={handleClick}
+                >
+                  04
+                </button>
+              </li>
+              <li className="flex items-center gap-10">
+                <button
+                  className="btn__disabled"
+                  value="5"
+                  onClick={handleClick}
+                >
+                  05
+                </button>
+              </li>
+            </ul>
+            <div className="roadmap__right-content"
+                 data-aos="flip-right"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="1000"
+                 data-aos-easing="ease-in-out"
+            >
+              <div className="roadmap__right">
+                <img
+                  src={roadmap[active - 1].icon}
+                  alt="roadmap first"
+                  className="roadmap__img"
+                />
+                <h3>{roadmap[active - 1].title}</h3>
+                {roadmap[active - 1].text.length > 0 ? (
+                  <p className="roadmap__ul">{roadmap[active - 1]?.text}</p>
+                ) : (
+                  <ul className="roadmap__ul">
                     {roadmap[active - 1].list.map((list, i) => (
-                      <li key={i}>
+                      <li key={i} className="swiper__li">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="red"
-                          className="w-6 h-6"
-                          width="9"
-                          height="9"
+                          className="swiper__close"
+                          width="30"
+                          height="30"
                         >
                           <path
                             strokeLinecap="round"
@@ -237,18 +253,17 @@ function Roadmap() {
                             d="M6 18L18 6M6 6l12 12"
                           />
                         </svg>
-                        {list}
+                        <div className="swiper__list">{list}</div>
                       </li>
                     ))}
                   </ul>
-
-                  <div
-                    className="roadmap__frame"
-                    style={{ width: `${roadmap[active - 1].frameWidht}px` }}
-                  ></div>
-                  <Button>Let's Burn</Button>
-                </div>
-              </CSSTransition>
+                )}
+                <div
+                  className="roadmap__frame"
+                  style={{ width: `${roadmap[active - 1].frameWidht}px` }}
+                ></div>
+                <Button>Let's Burn</Button>
+              </div>
             </div>
           </div>
         </div>

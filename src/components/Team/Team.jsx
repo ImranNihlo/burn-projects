@@ -129,7 +129,13 @@ function Team() {
             <div className="team__subtitle">
               <Subtitle>Team</Subtitle>
             </div>
-            <h1 className="team__title">
+            <h1 className="team__title"
+                data-aos="zoom-in"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+            >
               <span className="team__title-primary">Fit</span>
               <span>Burn</span>
               <p>
@@ -229,7 +235,13 @@ function Team() {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <h2 className="team__title-advisors">Advisors</h2>
+            <h2 className="team__title-advisors"
+                data-aos="zoom-in"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+            >Advisors</h2>
             <Swiper
               effect={"flip "}
               grabCursor={true}

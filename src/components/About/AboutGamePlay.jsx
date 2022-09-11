@@ -12,7 +12,13 @@ function AboutGamePlay() {
             <div className="gameplay__left">
               <div>
                 <Subtitle>HOW IT WORKS</Subtitle>
-                <div className="about__title">
+                <div className="about__title"
+                     data-aos="zoom-in"
+                     data-aos-offset="200"
+                     data-aos-delay="50"
+                     data-aos-duration="1000"
+                     data-aos-easing="ease-in-out"
+                >
                   game<span>play</span>
                 </div>
                 <p className="gameplay__text url">
@@ -21,7 +27,13 @@ function AboutGamePlay() {
                 </p>
               </div>
 
-              <div className="gameplay__cardbox">
+              <div className="gameplay__cardbox"
+                   data-aos="flip-left"
+                   data-aos-offset="200"
+                   data-aos-delay="50"
+                   data-aos-duration="1000"
+                   data-aos-easing="ease-in-out"
+              >
                 <div className="cardbox__left">
                   <img src={gameplayLoading} alt="" />
                 </div>
@@ -45,7 +57,13 @@ function AboutGamePlay() {
               <div className="gameplay__phone">
                 <img src={phone} alt="phone"/>
               </div>
-              <ul className="gameplay__right-list">
+              <ul className="gameplay__right-list"
+                  data-aos="flip-right"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+              >
                 <li>
                   <span>01</span>
                   <p>

@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import unify from "../../assets/images/partners/unify.svg";
 import logic from "../../assets/images/partners/logic.svg";
 import aura from "../../assets/images/partners/aura.svg";
-import zantic from "../../assets/images/partners/unify.svg";
+import zantic from "../../assets/images/partners/zantic.svg";
 import orbit from "../../assets/images/partners/orbit.svg";
 import coin from "../../assets/images/partners/Coin.png"
 
@@ -34,10 +34,16 @@ function Partners() {
     <>
       <div className="partners__wrapper">
         <div className="partners app__container text-center" id="partners">
-          <div className="partners__title-box">
+          <div className="partners__title-box" >
             <Subtitle>partners</Subtitle>
           </div>
-          <h1 className="partners__title">PARTNERS</h1>
+          <h1 className="partners__title"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+          >PARTNERS</h1>
           <p className="partners__text">
             FitBurn is going to disrupt the whole fitness industry with the
             world’s first burn-to-earn
@@ -55,7 +61,7 @@ function Partners() {
           className="swiper__partners"
         >
           {parters.map((partner) => (
-            <SwiperSlide key={partner.id}>
+            <SwiperSlide key={partner.id} className="swiper__position">
               <div className="partners__card relative">
                 <img src={partner.image} alt="partner" />
                 <p className="partners__card-name">{partner.name}</p>

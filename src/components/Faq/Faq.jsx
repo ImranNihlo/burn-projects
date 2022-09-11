@@ -29,7 +29,13 @@ function Faq() {
     <div className="faq__bg">
       <div className="relative" id="faq">
         <div className="faq__wrapper">
-          <div className="app__container">
+          <div className="app__container"
+               data-aos="flip-down"
+               data-aos-offset="200"
+               data-aos-delay="50"
+               data-aos-duration="1000"
+               data-aos-easing="ease-in-out"
+          >
             <div className="faq ">
               {faqs.map((item, i) => (
                 <FaqItem key={i} item={item} />

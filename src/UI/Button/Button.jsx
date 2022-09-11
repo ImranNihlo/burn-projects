@@ -13,7 +13,7 @@ function Button(props) {
         <div className="button__wrap">
           <button className="btn__primary">
             <span>{props.children}</span>
-            <img src={Arrow} alt="arrow" />
+            <img src={Arrow} alt="arrow"/>
           </button>
         </div>
       </div>

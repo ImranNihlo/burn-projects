@@ -13,7 +13,6 @@ import "./About.scss";
 import AboutGamePlay from "./AboutGamePlay";
 import AnimationRed from "./components/AnimationRed";
 import AnimationWhite from "./components/AnimationWhite";
-import ReactFullpage from '@fullpage/react-fullpage'
 
 function About() {
   return (
@@ -23,14 +22,27 @@ function About() {
           <div className="about__left">
             <div className="about__left__content" id="about">
               <Subtitle>about fitburn</Subtitle>
-              <h1 className="about__title">Burn To EARN</h1>
+              <h1
+                className="about__title"
+                data-aos="zoom-in"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >Burn To EARN</h1>
               <p className="about__text">
                 Get paid for every drop of your sweat .
               </p>
               <Button>Let’s Burn</Button>
             </div>
           </div>
-          <div className="about__right">
+          <div className="about__right"
+               data-aos="flip-left"
+               data-aos-offset="200"
+               data-aos-delay="50"
+               data-aos-duration="1000"
+               data-aos-easing="ease-in-out"
+          >
             <Carousel />
           </div>
         </div>
@@ -45,7 +57,14 @@ function About() {
                 <Subtitle>about fitburn</Subtitle>
               </div>
 
-              <h2 className="about__second__title">
+              <h2
+                className="about__second__title"
+                data-aos="zoom-in"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 <span>
                   sweat,
                   <span className="about__second__title-primary">burn</span>
@@ -101,6 +120,11 @@ function About() {
               modifier: 1,
               slideShadows: false,
             }}
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
           >
             <SwiperSlide>
               <div className="second__carousel__card">

@@ -16,14 +16,20 @@ function Tokenomics() {
               <div className="tokenomics__icon" data-aos="zoom-in"
                    data-aos-offset="200"
                    data-aos-delay="50"
-                   data-aos-duration="2000"
+                   data-aos-duration="1000"
                    data-aos-easing="ease-in-out"
               >
                 <img src={coin} alt="coin" className="coin"/>
               </div>
               <div className="tokenomics__left-content">
                 <Subtitle>our token</Subtitle>
-                <div className="tokenomics__title">
+                <div className="tokenomics__title"
+                     data-aos="zoom-in"
+                     data-aos-offset="200"
+                     data-aos-delay="50"
+                     data-aos-duration="3000"
+                     data-aos-easing="ease-in-out"
+                >
                   <p>CAL</p>
                   <p className="flex items-center">
                     <span>T </span>
@@ -35,7 +41,13 @@ function Tokenomics() {
               </div>
             </div>
             <div className="tokenomics__right">
-              <ul className="tokenomics__right-list">
+              <ul className="tokenomics__right-list"
+                  data-aos="flip-right"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+              >
                 <li>
                   <h2>Buying products and services on the platform</h2>
                   <p>(gym memberships, supplements, accessories, etc.)</p>

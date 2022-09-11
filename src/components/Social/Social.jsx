@@ -9,7 +9,13 @@ function Social() {
   return (
     <div className="social__wrapper">
       <div className="app__container">
-        <div className="social__title" id="social">
+        <div className="social__title" id="social"
+             data-aos="zoom-in"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+        >
           <h2>join fitburn</h2>
           <h2>in social MEDIA</h2>
         </div>

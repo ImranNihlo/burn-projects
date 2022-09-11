@@ -15,11 +15,12 @@
 
 .btn__primary {
   display: flex;
+  gap: 7px;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(180deg, #4e4c4a 0%, rgba(47, 43, 38, 0.69) 100%);
   backdrop-filter: blur(240px);
-  padding: 14px 50px 11px 29px;
+  padding: 14px 42px 11px 30px;
   clip-path: polygon(10% 0, 100% 0%, 79% 99%, 0% 100%);
 
   span {
