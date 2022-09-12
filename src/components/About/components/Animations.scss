@@ -127,3 +127,25 @@ $animationSpeed: 15s;
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .slider__white {
+    .slide {
+      height: 24px;
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+  .slider__red {
+    .slide {
+      height: 24px;
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+

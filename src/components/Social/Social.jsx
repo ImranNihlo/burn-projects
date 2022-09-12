@@ -19,7 +19,7 @@ function Social() {
           <h2>join fitburn</h2>
           <h2>in social MEDIA</h2>
         </div>
-        <div className="social-img"
+        <div className="social-img-block"
              data-aos="zoom-in"
              data-aos-offset="200"
              data-aos-delay="50"

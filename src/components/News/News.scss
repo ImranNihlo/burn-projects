@@ -91,3 +91,68 @@
     clip-path: polygon(85% 0, 100% 16%, 100% 50%, 100% 98%, 0 98%, 0 0);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .news__title {
+    width: 272px;
+    font-size: 36px;
+    flex-wrap: wrap;
+    text-align: center;
+    display: block;
+
+    margin-top: 50px;
+
+    span {
+      display: block;
+      width: 272px;
+    }
+
+    img {
+      margin: 0 10px;
+      display: none;
+    }
+  }
+
+  .news__wrapper {
+    padding: 0;
+  }
+
+  .events__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    padding: 0 20px;
+    button {
+      width: 120px;
+    }
+  }
+
+  .news__box::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 790px;
+    height: 480px;
+    background-image: url("../../assets/images/line-frame.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg) translateX(-200px) translateY(200px);
+    display: none;
+  }
+
+  .events__slider-box {
+    height: auto;
+  }
+
+  .events__slider {
+    display: block;
+  }
+
+  .btn__more-news {
+    display: flex;
+  }
+}
+

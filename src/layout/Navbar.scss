@@ -59,3 +59,18 @@
 .nav__item ~ .nav__item {
   margin-left: 32px;
 }
+
+@media only screen and (max-width: 973px) {
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__right {
+    display: none;
+  }
+
+  .menu__btn {
+    margin-right: 24px;
+    display: block;
+  }
+}

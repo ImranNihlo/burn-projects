@@ -96,3 +96,61 @@
   margin: auto;
   margin-top: -100px;
 }
+
+@media only screen and (max-width: 850px) {
+  .social__title {
+    font-size: 36px;
+  }
+
+  .social-img {
+    margin-top: 0;
+  }
+
+  .social__box {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-image: url("../../assets/images/social-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 490px;
+  }
+
+  .social__wrapper {
+    background-image: url("../../assets/images/hero-bg-red.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(0% - 350px) calc(0% - 0px);
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .social__box {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-image: url("../../assets/images/social-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 280px;
+  }
+
+  @keyframes circle {
+    0% {
+      transform: translateX(0px);
+    }
+
+    50% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: translateX(0px);
+    }
+  }
+}
+

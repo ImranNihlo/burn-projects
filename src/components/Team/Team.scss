@@ -180,3 +180,164 @@
     background-color: transparent;
   }
 }
+
+@media only screen and (max-width: 880px) {
+  .team__title {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 104%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    width: 271px;
+    margin: 0 auto;
+    margin-top: 31px;
+
+    .team__title-primary {
+      color: #ef1000;
+      margin: 0 10px;
+      position: relative;
+    }
+
+    .team__title-primary::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../assets/images/top-fire.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 67px;
+      height: 54px;
+      top: -50px;
+      left: -5px;
+    }
+
+    p {
+      display: flex;
+      gap: 5px;
+
+      img {
+        width: 62px;
+      }
+    }
+  }
+
+  .team__subtitle {
+    width: 120px;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+  }
+
+  .myTeamSwiper {
+    width: 100%;
+    margin-top: 79px;
+    background-color: transparent;
+    // filter: drop-shadow(0px 200px 150px rgba(0, 111, 241, 0.5));
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 198px;
+      height: 261px;
+      background-color: transparent;
+    }
+  }
+
+  .team__card {
+    width: 198px;
+    height: 261px;
+    padding: 50px 0;
+    background-color: transparent;
+    transform: scale(0.5);
+
+    img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .team__card-active {
+    width: 198px;
+    height: 261px;
+    background-image: url("../../assets/images/team-carousel-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 26px 29px 38px 29px;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      width: 286px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 10px;
+      margin-top: 15px;
+    }
+  }
+
+  .team__card-advisors {
+    width: 198px;
+    height: 261px;
+    background-image: url("../../assets/images/team-carousel-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 26px 29px 38px 29px;
+    margin: 40px auto;
+    // filter: drop-shadow(0px 0px 150px #ef1000);
+    h3 {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 10px;
+      margin-top: 5px;
+    }
+  }
+
+  .team__title-advisors {
+    width: 280px;
+    font-size: 33px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .team__wrapper {
+    padding: 0;
+    background-image: url("../../assets/images/hero-bg90.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(0% - 200px) calc(0% + 0px);
+    padding-top: 20px;
+  }
+
+  .team::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 790px;
+    height: 480px;
+    background-image: url("../../assets/images/line-frame.png");
+    background-repeat: no-repeat;
+    background-position: calc(0% - 150px) calc(0% + 50px);
+    background-size: cover;
+    display: none;
+  }
+}

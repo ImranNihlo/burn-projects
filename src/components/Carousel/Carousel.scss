@@ -85,3 +85,70 @@
     width: 204px;
   }
 }
+
+@media only screen and (max-width: 1050px) {
+  .mySwiper {
+    width: 100%;
+    margin-top: 50px;
+    background: transparent;
+    transition: all 0.5s ease;
+    .swiper-slide {
+      transition: all 0.5s ease;
+      background-position: center;
+      background-size: cover;
+      width: 170px;
+      height: 200px;
+      background-color: transparent;
+    }
+  }
+
+  .carousel__card {
+    background-image: url("../../assets/images/carousel-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 170px;
+    height: 170px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+
+    img {
+      width: 65px;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+
+    h3 {
+      width: 100%;
+      margin: 0 auto;
+      font-family: "Trap";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 104%;
+      text-align: center;
+      color: #f8f8f8;
+      margin-top: 30px;
+    }
+  }
+  .carousel__card-active {
+    background-image: url("../../assets/images/carousel-card-bbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 170px;
+    height: 170px;
+    transform: scale(0.5);
+
+    img {
+      width: 65px;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+
+    h3 {
+      display: none;
+    }
+  }
+}
+

@@ -111,3 +111,149 @@
     transform:rotate(360deg);
   }
 }
+
+//@media only screen and (max-width: 1200px) {
+//  .hero__vector__bg {
+//    background-image: url("../../assets/images/Hero-vector.png");
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//    background-position: center;
+//    padding: 0;
+//  }
+//
+//  .hero__wrapper {
+//    background-image: url("../../assets/images/Gorilla.png");
+//    background-repeat: no-repeat;
+//    background-size: contain;
+//    background-position: center;
+//    height: 780px;
+//    position: relative;
+//    top: 0px;
+//  }
+//
+//  .hero__radial {
+//    background-image: url("../../assets/images/hero-bg.png");
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//    background-position: calc(0% - 100px) calc(0% + 100px);
+//  }
+//}
+//
+//.scroll__box {
+//  position: relative;
+//  left: calc(50% - 67px);
+//  top: 0px;
+//}
+
+@media only screen and (max-width: 768px) {
+  .hero__wrapper {
+    background-image: url("../../assets/images/Gorilla.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 600px;
+    position: relative;
+    top: 0px;
+  }
+
+  .hero__radial {
+    background-image: url("../../assets/images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(0% - 300px) calc(0% - 50px);
+  }
+
+  .hero__vector__bg {
+    background-image: url("../../assets/images/Lines.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center calc(0% + 150px);
+    padding: 0;
+  }
+
+  .hero__title {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+
+    .hero__title__primary {
+      color: #f01100;
+      margin-right: 10px;
+    }
+  }
+
+  .hero__subtitle {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .hero__content {
+    width: 272px;
+    position: absolute;
+    top: calc(0% + 150px);
+    left: calc(50% - 136px);
+  }
+
+  .social {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero__wrapper {
+    background-image: url("../../assets/images/Gorilla.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 550px;
+    position: relative;
+    top: 0px;
+  }
+
+  .hero__vector__bg {
+    background-image: url("../../assets/images/Lines.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center calc(0% + 150px);
+    padding: 0;
+  }
+
+  .hero__content {
+    position: relative;
+    top: 120px;
+    animation: hero__content__animation 2s ease-in-out 1;
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hero__content__animation {
+  0% {
+    transform: scale(0.6);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

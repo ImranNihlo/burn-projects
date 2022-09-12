@@ -483,3 +483,418 @@
     transform: translateX(100%);
   }
 }
+
+//@media only screen and (max-width: 1200px) {
+//  .about__wrapper {
+//    background-image: url("../../assets/images/hero-bg.png");
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//    padding: 250px 0;
+//    background-position: calc(0% + 200px) calc(0% - 140px);
+//  }
+//
+//  .about__wrapper::before {
+//    content: "";
+//    position: absolute;
+//    left: 0;
+//    top: 0;
+//    width: 790px;
+//    height: 480px;
+//    background-image: url("../../assets/images/line-frame.png");
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//    transform: rotate(15deg) translateY(900px) translateX(100px);
+//  }
+//
+//  .about__wrapper::after {
+//    content: "";
+//    position: absolute;
+//    right: 0;
+//    top: 0;
+//    width: 790px;
+//    height: 480px;
+//    background-image: url("../../assets/images/line-frame.png");
+//    background-repeat: no-repeat;
+//    background-position: calc(0% - 300px);
+//    background-size: cover;
+//    transform: rotate(-190deg) translateY(0px) translateX(-100px);
+//  }
+//
+//  .second__about-wrapper {
+//    background-image: url("../../assets/images/hero-bg-180.png");
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//    background-position: calc(0% - 1000px) calc(0% + 100px);
+//    padding: 450px 0;
+//  }
+//
+//  .second__about-wrapper::after {
+//    content: "";
+//    position: absolute;
+//    left: 0;
+//    top: 0;
+//    width: 450px;
+//    height: 380px;
+//    background-image: url("../../assets/images/line-frame.png");
+//    background-repeat: no-repeat;
+//    background-position: calc(0% + 150px);
+//    background-size: cover;
+//    transform: rotate(60deg) translateY(300px) translateX(0px);
+//  }
+//
+//  .second__about-wrapper::before {
+//    content: "";
+//    position: absolute;
+//    right: 0;
+//    top: 0;
+//    width: 450px;
+//    height: 380px;
+//    background-image: url("../../assets/images/line-frame.png");
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//    transform: rotate(200deg) translateY(-150px) translateX(-350px);
+//  }
+//
+//  .about__second__title {
+//    font-family: "Monument Extended";
+//    font-style: normal;
+//    font-weight: 400;
+//    font-size: 36px;
+//    line-height: 100%;
+//    text-transform: uppercase;
+//    color: #ffffff;
+//    width: 600px;
+//    margin: 0 auto;
+//    margin-top: 47px;
+//    text-align: center;
+//    justify-content: center;
+//  }
+//
+//  .second__about-text {
+//    font-family: "Trap";
+//    font-style: normal;
+//    font-weight: 600;
+//    font-size: 16px;
+//    line-height: 104%;
+//
+//    text-align: center;
+//
+//    color: #ffffff;
+//    width: 100%;
+//    margin: 0 auto;
+//    margin-top: 43px;
+//  }
+//}
+
+@media only screen and (max-width: 1050px) {
+  .about {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about__left__content {
+    width: 272px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about__left__subtitle {
+    display: block;
+    width: 202px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about__title {
+    width: 272px;
+
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 38px;
+    text-align: center;
+
+    span {
+      color: #ef1000;
+    }
+  }
+
+  .about__subtitle {
+    justify-content: center;
+  }
+
+  .about__text {
+    width: 201px;
+    margin: 36px auto;
+    font-family: "Trap";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 104%;
+    color: #ffffff;
+  }
+
+  .about__second__swiper {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 30px;
+    .swiper-slide {
+      width: 224px;
+      height: 290px;
+      margin: 0 auto;
+      padding: 100px 0;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .second__carousel__card {
+      width: 224px;
+      height: 260px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(26px);
+      opacity: 0.7;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+      padding: 13px 25px;
+
+      img {
+        width: 236px;
+        margin: 0 auto;
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .swiper-slide:hover {
+      .second__carousel__card {
+        background: transparent;
+        background-image: url("../../assets/images/carousel/carousel-hover-bg.png");
+        background-position: calc(50% - 30px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 1;
+        transform: translateY(-25px);
+      }
+
+      img {
+        transform: scale(1.5) translateY(-20px);
+      }
+      background: transparent;
+    }
+  }
+
+  .gameplay {
+    display: block;
+  }
+
+  .about__gameplay__wrapper {
+    background-image: url("../../assets/images/hero-bg-90.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(0% + 1100px) calc(0% - 0px);
+    padding: 250px 0;
+    padding-bottom: 310px;
+  }
+
+  .gameplay__text {
+    font-family: "Trap";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 104%;
+    color: #ffffff;
+    margin-top: 23px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .gameplay__cardbox {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+
+  .gameplay__right-list {
+    list-style-type: none;
+    padding: 0 20px;
+    margin-top: 50px;
+
+    li {
+      width: 100%;
+      padding: 38px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.24);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.3s ease-in-out;
+      span {
+        font-family: "Monument Extended";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 104%;
+        text-transform: uppercase;
+        color: #807a7d;
+        transition: all 0.3s ease-in-out;
+      }
+
+      p {
+        width: 337px;
+        font-family: "Trap";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 104%;
+        color: #807a7d;
+        opacity: 0.9;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .gameplay__subtitle {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .gameplay__cardbox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cardbox__right {
+    margin-left: 0px;
+
+    .cardbox__card {
+      width: 94px;
+      height: 94px;
+
+      p {
+        font-size: 10px;
+        margin-top: 70px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .about__second__title {
+      font-family: "Monument Extended";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #ffffff;
+      width: 272px;
+      margin: 0 auto;
+      margin-top: 47px;
+      text-align: center;
+      justify-content: center;
+    }
+    .second__about-text {
+      font-family: "Trap";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 104%;
+      width: 272px;
+      margin: 0 auto;
+      text-align: center;
+
+      color: #ffffff;
+      margin-top: 23px;
+    }
+
+    .second__about-wrapper {
+      background-image: url("../../assets/images/hero-bg-180.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: calc(0% - 200px) calc(0% + 0px);
+      padding: 0;
+      padding-bottom: 100px;
+    }
+
+    .second__about-wrapper::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 400px;
+      height: 480px;
+      background-image: url("../../assets/images/line-frame.png");
+      background-repeat: no-repeat;
+      background-position: calc(0% - 190px) calc(0% - 120px);
+      background-size: cover;
+    }
+
+    .gameplay {
+      padding: 0;
+    }
+
+    .second__about-wrapper::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 300px;
+      height: 280px;
+      background-image: url("../../assets/images/line-frame.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: rotate(180deg) translateY(100px) translateX(-200px);
+    }
+
+    .about__gameplay__wrapper {
+      padding: 0;
+      padding-bottom: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .about__wrapper {
+      background-image: url("../../assets/images/hero-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 250px 0;
+      background-position: calc(0% - 800px) calc(0% - 40px);
+      padding-top: 100px;
+      padding-bottom: 0;
+    }
+
+    .about__wrapper::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 450px;
+      height: 480px;
+      background-image: url("../../assets/images/line-frame.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translateY(600px) translateX(-50px) rotate(25deg);
+    }
+
+    .about__wrapper::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 350px;
+      height: 380px;
+      background-image: url("../../assets/images/line-frame.png");
+      background-repeat: no-repeat;
+      background-position: calc(0% - 300px);
+      background-size: cover;
+      transform: rotate(-190deg) translateY(-700px) translateX(-100px);
+      display: none;
+    }
+  }
+}
+

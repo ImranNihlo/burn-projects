@@ -4,6 +4,20 @@
     <list default="true" id="add146ef-f1a7-430f-9cc2-82489426b654" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/components/Animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/components/Animations.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Carousel/Carousel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Carousel/Carousel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Faq/Faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Faq/Faq.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Faq/components/FaqItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Faq/components/FaqItem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News/News.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News/components/NewsCard/NewsCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/components/NewsCard/NewsCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Partners/Partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Partners/Partners.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Roadmap/Roadmap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Roadmap/Roadmap.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Social/Social.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Social/Social.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Social/Social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Social/Social.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Team/Team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/Team.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tokenomics/Tokenomics.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tokenomics/Tokenomics.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Navbar.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662884260935</updated>
       <workItem from="1662884264605" duration="35543000" />
-      <workItem from="1662963479247" duration="24392000" />
+      <workItem from="1662963479247" duration="28488000" />
     </task>
     <servers />
   </component>
