@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="add146ef-f1a7-430f-9cc2-82489426b654" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/AboutSecond.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutSecond.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tokenomics/Tokenomics.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tokenomics/Tokenomics.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662884260935</updated>
       <workItem from="1662884264605" duration="35543000" />
-      <workItem from="1662963479247" duration="18066000" />
+      <workItem from="1662963479247" duration="18819000" />
     </task>
     <servers />
   </component>
