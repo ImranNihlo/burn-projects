@@ -12,24 +12,17 @@ function Tokenomics() {
       <div className="tokenomics__wrapper">
         <div className="app__container">
           <div className="tokenomics" id="tokenomics">
-            <div className="tokenomics__left">
-              <div className="tokenomics__icon" data-aos="zoom-in"
-                   data-aos-offset="200"
-                   data-aos-delay="50"
-                   data-aos-duration="1000"
-                   data-aos-easing="ease-in-out"
-              >
+            <div className="tokenomics__left" data-aos="zoom-in"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="2000"
+                 data-aos-easing="ease-in-out">
+              <div className="tokenomics__icon">
                 <img src={coin} alt="coin" className="coin"/>
               </div>
               <div className="tokenomics__left-content">
                 <Subtitle>our token</Subtitle>
-                <div className="tokenomics__title"
-                     data-aos="flip-left"
-                     data-aos-offset="200"
-                     data-aos-delay="50"
-                     data-aos-duration="2000"
-                     data-aos-easing="ease-in-out"
-                >
+                <div className="tokenomics__title">
                   <p>CAL</p>
                   <p className="flex items-center">
                     <span>T </span>
