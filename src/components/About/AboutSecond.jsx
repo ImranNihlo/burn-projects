@@ -12,6 +12,8 @@ import CarouselImage2 from '../../assets/images/carousel/carousel-2.png'
 function AboutSecond (props) {
   return (
     <div className="second__about-wrapper">
+      <div className="second__about-line-left"/>
+      <div className="second__about-line-right"/>
       <div className="app__container text-center">
         <div className="second__about" id="about-second">
           <div className="second__about__subtitle">
@@ -27,11 +29,9 @@ function AboutSecond (props) {
             data-aos-easing="ease-in-out"
           >
                 <span>
-                  sweat,
-                  <span className="about__second__title-primary">burn</span>
-                  calories
+                  sweat, <span className="about__second__title-primary">burn</span> calories
                 </span>
-            <span className="flex items-center justify-evenly">
+            <span className="flex items-center justify-center">
                   <span className="flex items-center gap-4 about__second__title-secondary">
                     and
                     <svg
@@ -40,6 +40,7 @@ function AboutSecond (props) {
                       viewBox="0 0 76 41"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      className="about__arrow-right"
                     >
                       <path
                         d="M0 20.5H70M70 20.5L52.5 3M70 20.5L52.5 38"

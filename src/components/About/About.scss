@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   //padding: 450px 0;
-  padding-top: 135px;
+  padding: 135px 0 100px 0;
   background-position: calc(0% + 200px) calc(0% - 140px);
 }
 
@@ -94,24 +94,23 @@
   background-position: calc(0% - 200px) calc(0% - 100px);
   //padding: 450px 0;
   padding: 100px 0;
+  position: relative;
 }
 
-.second__about-wrapper::after {
-  content: "";
+.second__about-line-left {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 90px;
   width: 790px;
   height: 480px;
   background-image: url("../../assets/images/line-frame.png");
   background-repeat: no-repeat;
   background-position: calc(0% + 150px);
   background-size: cover;
-  transform: rotate(60deg) translateY(200px) translateX(-200px);
+  transform: rotate(30deg) translateY(200px) translateX(-200px);
 }
 
-.second__about-wrapper::before {
-  content: "";
+.second__about-line-right {
   position: absolute;
   right: 0;
   top: 0;
@@ -120,7 +119,7 @@
   background-image: url("../../assets/images/line-frame.png");
   background-repeat: no-repeat;
   background-size: cover;
-  transform: rotate(180deg) translateY(200px) translateX(-200px);
+  transform: rotate(180deg) translateY(0) translateX(-200px);
 }
 
 .second__about {
@@ -229,7 +228,7 @@
   background-position: calc(0% - 200px) calc(0% - 0px);
   //padding: 250px 0;
   //padding-bottom: 310px;
-  padding: 180px 0 114px 0;
+  padding: 200px 0 114px 0;
 }
 
 .gameplay {
@@ -441,6 +440,10 @@
   animation: left 1.5s infinite;
   animation-delay: 1s;
   overflow: hidden;
+}
+
+.about__arrow-right {
+  margin: 0 25px;
 }
 
 
