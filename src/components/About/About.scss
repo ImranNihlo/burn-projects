@@ -11,24 +11,23 @@
   //padding: 450px 0;
   padding: 135px 0 100px 0;
   background-position: calc(0% + 200px) calc(0% - 140px);
+  position: relative;
 }
 
-.about__wrapper::before {
-  content: "";
+.about__wrapper-left-line {
   position: absolute;
   left: 0;
-  top: 0;
-  width: 790px;
+  bottom: 300px;
+  width: 700px;
   height: 480px;
   background-image: url("../../assets/images/line-frame.png");
   background-repeat: no-repeat;
-  background-position: calc(0% - 200px);
+  background-position: calc(0% + 150px);
   background-size: cover;
-  transform: rotate(30deg) translateY(300px) translateX(100px);
+  transform: rotate(30deg) translateY(200px) translateX(-200px);
 }
 
-.about__wrapper::after {
-  content: "";
+.about__wrapper-right-line {
   position: absolute;
   right: 0;
   top: 0;
@@ -36,9 +35,8 @@
   height: 480px;
   background-image: url("../../assets/images/line-frame.png");
   background-repeat: no-repeat;
-  background-position: calc(0% - 300px);
   background-size: cover;
-  transform: rotate(-190deg);
+  transform: rotate(180deg) translateY(0) translateX(-200px);
 }
 
 .about__subtitle {
@@ -100,8 +98,8 @@
 .second__about-line-left {
   position: absolute;
   left: 0;
-  bottom: 90px;
-  width: 790px;
+  bottom: 300px;
+  width: 700px;
   height: 480px;
   background-image: url("../../assets/images/line-frame.png");
   background-repeat: no-repeat;
@@ -228,12 +226,13 @@
   background-position: calc(0% - 200px) calc(0% - 0px);
   //padding: 250px 0;
   //padding-bottom: 310px;
-  padding: 200px 0 114px 0;
+  padding: 200px 0 125px 0;
 }
 
 .gameplay {
   display: flex;
   justify-content: space-between;
+  padding-top: 25px;
   //padding: 150px 0;
 }
 

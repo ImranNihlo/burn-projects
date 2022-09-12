@@ -19,6 +19,8 @@ function About() {
   return (
     <div className="relative">
       <div className="about__wrapper">
+        <div className="about__wrapper-right-line"/>
+        <div className="about__wrapper-left-line"/>
         <div className="about app__container">
           <div className="about__left">
             <div className="about__left__content" id="about">

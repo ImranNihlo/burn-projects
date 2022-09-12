@@ -24,7 +24,7 @@ function Tokenomics() {
               <div className="tokenomics__left-content">
                 <Subtitle>our token</Subtitle>
                 <div className="tokenomics__title"
-                     data-aos="zoom-in"
+                     data-aos="flip-left"
                      data-aos-offset="200"
                      data-aos-delay="50"
                      data-aos-duration="2000"
@@ -45,7 +45,7 @@ function Tokenomics() {
                   data-aos="flip-right"
                   data-aos-offset="200"
                   data-aos-delay="50"
-                  data-aos-duration="1000"
+                  data-aos-duration="4000"
                   data-aos-easing="ease-in-out"
               >
                 <li>

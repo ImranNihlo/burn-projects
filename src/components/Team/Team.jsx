@@ -124,6 +124,7 @@ function Team() {
   return (
     <>
       <div className="team__wrapper">
+        <div className="team__wrapper-bg"/>
         <div className="team" id="team">
           <div className="app__container">
             <div className="team__subtitle">
