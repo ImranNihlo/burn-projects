@@ -3,7 +3,7 @@ import "./App.css";
 import "./scss/index.scss";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
-import Tokenmonics from "./components/Tokenomics/Tokenomics";
+import Tokemonics from "./components/Tokenomics/Tokenomics";
 import Team from "./components/Team/Team";
 import Partners from "./components/Partners/Partners";
 import Faq from "./components/Faq/Faq";
@@ -38,7 +38,7 @@ function App() {
               </Link>
               <ul className="nav__menu">
                 <li className="nav__item ">
-                  <Link to="#about" smooth>
+                  <Link to="#about-second" smooth>
                     About
                   </Link>
                 </li>
@@ -85,7 +85,7 @@ function App() {
       <Noise>
         <Hero />
         <About />
-        <Tokenmonics />
+        <Tokemonics />
         <Roadmap />
         <Team />
         <Partners />

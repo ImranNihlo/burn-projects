@@ -27,7 +27,7 @@ function Tokenomics() {
                      data-aos="zoom-in"
                      data-aos-offset="200"
                      data-aos-delay="50"
-                     data-aos-duration="3000"
+                     data-aos-duration="2000"
                      data-aos-easing="ease-in-out"
                 >
                   <p>CAL</p>

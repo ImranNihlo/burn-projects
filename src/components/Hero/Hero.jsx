@@ -1,6 +1,8 @@
 import React from "react";
 import "./Hero.scss";
 import Social from "./Social/Social";
+import logo from '../../assets/logo/logo.svg'
+import { HashLink as Link } from 'react-router-hash-link'
 
 function Hero() {
   return (
@@ -21,9 +23,10 @@ function Hero() {
           </div>
           <Social />
         </div>
-        <div className="scroll__box">
-        </div>
-        <p className="scroll__text">scroll</p>
+        <Link to="#about" smooth>
+          <div className="scroll__box"/>
+          <p className="scroll__text">scroll</p>
+        </Link>
       </div>
     </div>
   );

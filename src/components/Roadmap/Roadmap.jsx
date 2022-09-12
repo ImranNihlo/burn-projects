@@ -141,9 +141,9 @@ function Roadmap() {
                 alt="roadmap"
                 className="flex mx-auto"
                 style={{
-                  //marginTop: `${roadmap[active - 1]?.mt}px`,
-                  //width: `${roadmap[active - 1]?.imgWidth}px`,
-                  //height: `${roadmap[active - 1]?.imgHeight}px`,
+                  // marginTop: `${roadmap[active - 1]?.mt}px`,
+                  // width: `${roadmap[active - 1]?.imgWidth}px`,
+                  // height: `${roadmap[active - 1]?.imgHeight}px`,
                 }}
               />
               <img
