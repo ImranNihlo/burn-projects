@@ -101,13 +101,13 @@ function App() {
       <Noise>
         <Hero />
         <About />
-        <Tokemonics />
-        <Roadmap />
-        <Team />
-        <Partners />
-        <Faq />
-        <News />
-        <Social />
+        {/*<Tokemonics />*/}
+        {/*<Roadmap />*/}
+        {/*<Team />*/}
+        {/*<Partners />*/}
+        {/*<Faq />*/}
+        {/*<News />*/}
+        {/*<Social />*/}
       </Noise>
     </React.Fragment>
   );

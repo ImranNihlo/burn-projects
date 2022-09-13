@@ -12,6 +12,7 @@
   padding: 135px 0 108px 0;
   background-position: calc(0% + 200px) calc(0% - 140px);
   position: relative;
+  overflow-y: hidden;
 }
 
 .about__wrapper-left-line {
@@ -93,6 +94,7 @@
   //padding: 450px 0;
   padding: 100px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .second__about-line-left {
@@ -824,6 +826,11 @@
     }
 
     .second__about-line-left {
+      bottom: 150px;
+      height: 370px;
+    }
+
+    .about__wrapper-left-line {
       bottom: 0;
       height: 370px;
     }
