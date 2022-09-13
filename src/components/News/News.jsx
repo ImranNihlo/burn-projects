@@ -1,10 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./News.scss";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-import { FreeMode, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import newsImage1 from "../../assets/images/News/news1.png";
 import newsImage2 from "../../assets/images/News/news2.png";
 import newsImage3 from "../../assets/images/News/news3.png";
@@ -12,8 +7,15 @@ import monkeyfire from "../../assets/images/top-fire.png";
 import monkeyIyes from "../../assets/images/monkey-eyes.png";
 import Button from "../../UI/Button/Button";
 import NewsCard from "./components/NewsCard/NewsCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function News() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const news = [
     {
       id: 1,
@@ -77,25 +79,30 @@ function News() {
               <button className="btn__news">NEWS</button>
             </div>
           </div>
-          <Swiper
-            slidesPerView={4}
-            spaceBetween={30}
-            freeMode={true}
-            pagination={false}
-            modules={[FreeMode, Pagination]}
-            className="swiper__news"
-            data-aos="flip-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            {news.map((item) => (
-              <SwiperSlide key={item.id}>
+          <div className="events__slider-box">
+            <div className="events__slider">
+              {news.map((item) => (
                 <NewsCard item={item} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+              ))}
+            </div>
+            <button className="btn__more-news">
+              More News
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="red"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
           <div className="w-[280px] mx-auto mt-[52px]">
             <Button>Become a partner</Button>
           </div>

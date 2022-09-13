@@ -6,6 +6,46 @@
   background-position: calc(0% - 100px) calc(0% - 100px);
 }
 
+.events__slider-box {
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.events__slider {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  overflow-x: scroll;
+  padding: 10px 0;
+}
+
+.btn__more-news {
+  display: none;
+  align-items: center;
+  width: 171px;
+  height: 44px;
+  gap: 10px;
+  margin: 0 auto;
+  background-image: url("../../assets/images/btn-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 25px 0 20px;
+  font-family: "Trap";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 104%;
+  color: #ffffff;
+  clip-path: polygon(5% 0, 100% 0, 88% 100%, 0% 100%);
+}
+
+.events__slider::-webkit-scrollbar {
+  display: none;
+}
+
 .news__box::after {
   content: "";
   position: absolute;
@@ -17,17 +57,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(180deg) translateX(-200px) translateY(200px);
-}
-
-.swiper__news {
-  width: 100%;
-  .swiper-slide {
-    width: 255px;
-    margin: 0 auto;
-    padding: 43px 0 70px 0;
-    background-position: center;
-    background-size: cover;
-  }
 }
 
 .news__title {
@@ -61,9 +90,9 @@
     width: 145px;
     height: 42px;
     background: linear-gradient(
-      180deg,
-      rgba(255, 190, 114, 0.3) 0%,
-      rgba(255, 214, 166, 0.207) 100%
+                    180deg,
+                    rgba(255, 190, 114, 0.3) 0%,
+                    rgba(255, 214, 166, 0.207) 100%
     );
     backdrop-filter: blur(541.885px);
     font-family: "Trap";
@@ -155,4 +184,3 @@
     display: flex;
   }
 }
-
