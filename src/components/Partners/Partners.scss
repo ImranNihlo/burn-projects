@@ -157,6 +157,10 @@
     font-size: 36px;
   }
 
+  .swiper-wrapper {
+    transform: translate3d(100px, 0, 0)!important;
+  }
+
   .partners__subtitle {
     width: 165px;
     margin: 0 auto;
@@ -173,6 +177,7 @@
     width: 95%;
     transform: rotate(6deg);
     .swiper-slide {
+      width: 180px!important;
       margin-top: 85px;
       text-align: center;
       font-size: 18px;

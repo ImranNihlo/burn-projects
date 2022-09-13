@@ -23,8 +23,8 @@ function Tokenomics() {
                 <img src={coin} alt="coin" className="coin"/>
               </div>
               <div className="tokenomics__left-content">
-                <Subtitle data-aos="fade-right">our token</Subtitle>
-                <div className="tokenomics__title" data-aos="fade-left">
+                <Subtitle>our token</Subtitle>
+                <div className="tokenomics__title">
                   <p>CAL</p>
                   <p className="flex items-center">
                     <span>T </span>
