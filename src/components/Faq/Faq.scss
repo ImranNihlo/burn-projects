@@ -71,6 +71,22 @@
   padding-right: 51px;
 }
 
+.faq__answer {
+  font-family: 'Trap', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 104%;
+  color: #FFFFFF;
+  opacity: 0.9;
+  margin-top: 40px;
+  text-align: center;
+  .faq__answer-red {
+    color: #EF1000;
+    cursor: pointer;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .faq {
     width: 90%;
