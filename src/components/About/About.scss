@@ -121,6 +121,8 @@
 }
 
 .second__about {
+  position: relative;
+  z-index: 83;
   text-align: center;
   margin-top: 60px;
 
@@ -625,6 +627,12 @@
     }
   }
 
+  .about__second__title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .about__subtitle {
     justify-content: center;
   }
@@ -808,7 +816,6 @@
       margin: 0 auto;
       margin-top: 47px;
       text-align: center;
-      justify-content: center;
     }
     .about__wrapper-right-line, .about__wrapper-left-line, .second__about-line-left, .second__about-line-right {
       display: none;

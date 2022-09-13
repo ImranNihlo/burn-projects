@@ -12,54 +12,43 @@ import CarouselImage2 from '../../assets/images/carousel/carousel-2.png'
 function AboutSecond (props) {
   return (
     <div className="second__about-wrapper">
-      <div className="second__about-line-left"/>
-      <div className="second__about-line-right"/>
       <div className="app__container text-center">
-        <div className="second__about" id="about-second">
-          <div className="second__about__subtitle">
+        <div className="second__about">
+          <div className="second__about__subtitle" data-aos="fade-left">
             <Subtitle>about fitburn</Subtitle>
           </div>
 
-          <h2
-            className="about__second__title"
-            data-aos="zoom-in"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-                <span>
-                  sweat, <span className="about__second__title-primary">burn</span> calories
+          <h2 className="about__second__title" data-aos="fade-right">
+            sweat,
+            <span className="about__second__title-primary">burn</span>
+            calories
+            <span className="flex items-center gap-4  mx-1">
+                  <span className="about__second__title-secondary">and</span>
+                  <svg
+                    width="60"
+                    height="25"
+                    viewBox="0 0 76 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 20.5H70M70 20.5L52.5 3M70 20.5L52.5 38"
+                      stroke="#EF1000"
+                      strokeWidth="8"
+                    />
+                  </svg>
+                  get
                 </span>
-            <span className="flex items-center justify-center">
-                  <span className="flex items-center gap-4 about__second__title-secondary">
-                    and
-                    <svg
-                      width="60"
-                      height="35"
-                      viewBox="0 0 76 41"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="about__arrow-right"
-                    >
-                      <path
-                        d="M0 20.5H70M70 20.5L52.5 3M70 20.5L52.5 38"
-                        stroke="#EF1000"
-                        strokeWidth="8"
-                      />
-                    </svg>
-                  </span>
-                  get rewarded
-                </span>
+            rewarded
           </h2>
 
-          <p className="second__about-text">
+          <p className="second__about-text" data-aos="fade-left">
             FitBurn is going to disrupt the whole fitness industry with the
             world’s first burn-to-earn application. FitBurn allows you to
             earn money in the form of our Calorie token (CAL) by holding a
             gamified T-Shirt NFT.
           </p>
-          <div className="second__about-button">
+          <div className="second__about-button" data-aos="fade-right">
             <Button>Get Your NFT</Button>
           </div>
         </div>
@@ -67,8 +56,8 @@ function AboutSecond (props) {
       <Swiper
         effect={"flip "}
         className="about__second__swiper"
-        slidesPerView={4}
-        spaceBetween={16}
+        slidesPerView={"auto"}
+        spaceBetween={10}
         pagination={false}
         grabCursor={true}
         centeredSlides={true}
@@ -82,12 +71,18 @@ function AboutSecond (props) {
           modifier: 1,
           slideShadows: false,
         }}
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+        data-aos="zoom-in"
       >
+        <SwiperSlide>
+          <div className="second__carousel__card">
+            <img src={CarouselImage1} alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="second__carousel__card">
+            <img src={CarouselImage2} alt="" />
+          </div>
+        </SwiperSlide>
         <SwiperSlide>
           <div className="second__carousel__card">
             <img src={CarouselImage3} alt="" />
@@ -101,16 +96,6 @@ function AboutSecond (props) {
         <SwiperSlide>
           <div className="second__carousel__card">
             <img src={CarouselImage5} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="second__carousel__card">
-            <img src={CarouselImage1} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="second__carousel__card">
-            <img src={CarouselImage2} alt="" />
           </div>
         </SwiperSlide>
       </Swiper>

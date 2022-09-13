@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="add146ef-f1a7-430f-9cc2-82489426b654" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Roadmap/Roadmap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Roadmap/Roadmap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Roadmap/Roadmap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Roadmap/Roadmap.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Social/Social.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Social/Social.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Social/Social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Social/Social.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tokenomics/Tokenomics.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tokenomics/Tokenomics.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/AboutSecond.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutSecond.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +50,7 @@
       <workItem from="1662884264605" duration="35543000" />
       <workItem from="1662963479247" duration="29239000" />
       <workItem from="1663024410468" duration="977000" />
-      <workItem from="1663050218062" duration="7221000" />
+      <workItem from="1663050218062" duration="8706000" />
     </task>
     <servers />
   </component>
