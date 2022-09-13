@@ -182,9 +182,9 @@
   width: 100%;
   background-color: transparent;
   .swiper-slide {
-    width: 290px;
+    width: 320px!important;
     height: 320px;
-    margin: 0 1px;
+    margin: 0 auto;
     padding: 100px 0;
     background-position: center;
     background-size: cover;
@@ -297,7 +297,7 @@
 .gameplay__phone {
   position: absolute;
   right: 280px;
-  top: 130px;
+  top: 100px;
 }
 
 .gameplay__right-list {
