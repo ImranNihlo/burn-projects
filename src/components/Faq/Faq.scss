@@ -1,10 +1,11 @@
 .faq__bg {
   background-image: url("../../assets/images/faq-bg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 110%;
   background-position: calc(0% - 0px) calc(0% - 50px);
   //padding-top: 150px;
   padding-top: 20px;
+  overflow: hidden;
 }
 
 .faq__wrapper {
@@ -18,15 +19,14 @@
 .faq__wrapper::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -131px;
+  bottom: 0;
   z-index: -100;
   width: 790px;
   height: 480px;
   background-image: url("../../assets/images/line-frame.png");
   background-repeat: no-repeat;
   background-size: cover;
-  transform: rotate(12deg) translateX(-200px) translateY(250px);
 }
 
 .faq__wrapper::before {
@@ -100,17 +100,8 @@
   }
 
   .faq__wrapper::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -100;
     width: 390px;
-    height: 380px;
-    background-image: url("../../assets/images/line-frame.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: rotate(12deg) translateX(-400px) translateY(250px);
+    height: 260px;
   }
 
   .faq__wrapper::before {
