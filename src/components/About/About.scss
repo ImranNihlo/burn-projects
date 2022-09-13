@@ -599,6 +599,10 @@
     align-items: center;
   }
 
+  .about__wrapper-right-line, .about__wrapper-left-line, .second__about-line-left, .second__about-line-right {
+    display: none;
+  }
+
   .about__left__content {
     width: 272px;
     margin: 0 auto;
@@ -814,9 +818,7 @@
       margin-top: 47px;
       text-align: center;
     }
-    .about__wrapper-right-line, .about__wrapper-left-line, .second__about-line-left, .second__about-line-right {
-      display: none;
-    }
+
     .second__about-text {
       font-family: "Trap";
       font-style: normal;
@@ -892,22 +894,18 @@
       padding-bottom: 0;
     }
 
-    .about__wrapper-right-line, .about__wrapper-left-line, .second__about-line-left, .second__about-line-right {
-      display: none;
-    }
-
-    .about__wrapper::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 450px;
-      height: 480px;
-      background-image: url("../../assets/images/line-frame.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      transform: translateY(600px) translateX(-50px) rotate(25deg);
-    }
+    //.about__wrapper::before {
+    //  content: "";
+    //  position: absolute;
+    //  left: 0;
+    //  top: 0;
+    //  width: 450px;
+    //  height: 480px;
+    //  background-image: url("../../assets/images/line-frame.png");
+    //  background-repeat: no-repeat;
+    //  background-size: contain;
+    //  transform: translateY(600px) translateX(-50px) rotate(25deg);
+    //}
 
     .about__wrapper::after {
       content: "";

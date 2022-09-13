@@ -164,7 +164,6 @@ function Team() {
               {carousel__data.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div
-                    data-aos="zoom-in"
                     className={
                       item.id === activeIndex + 1
                         ? "team__card-active"
@@ -257,7 +256,6 @@ function Team() {
               {carousel__advisors.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div
-                    data-aos="zoom-in"
                     className={
                       item.id === activeSwipe + 1
                         ? "team__card-active"
