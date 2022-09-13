@@ -33,17 +33,11 @@ function Partners() {
   return (
     <>
       <div className="partners__wrapper">
-        <div className="partners app__container text-center" id="partners">
+        <div className="partners app__container text-center" id="partners" data-aos="zoom-in">
           <div className="partners__title-box" >
             <Subtitle>partners</Subtitle>
           </div>
-          <h1 className="partners__title"
-              data-aos="zoom-in"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-          >PARTNERS</h1>
+          <h1 className="partners__title">PARTNERS</h1>
           <p className="partners__text">
             FitBurn is going to disrupt the whole fitness industry with the
             world’s first burn-to-earn

@@ -11,33 +11,33 @@ function AboutGamePlay() {
           <div className="gameplay">
             <div className="gameplay__left">
               <div>
-                <Subtitle>HOW IT WORKS</Subtitle>
-                <div className="about__title"
-                     data-aos="zoom-in"
-                     data-aos-offset="200"
-                     data-aos-delay="50"
-                     data-aos-duration="1000"
-                     data-aos-easing="ease-in-out"
+                <Subtitle data-aos="fade-left">HOW IT WORKS</Subtitle>
+                <div className="about__title" data-aos="fade-right"
+                     // data-aos="zoom-in"
+                     // data-aos-offset="200"
+                     // data-aos-delay="50"
+                     // data-aos-duration="1000"
+                     // data-aos-easing="ease-in-out"
                 >
                   game<span>play</span>
                 </div>
-                <p className="gameplay__text url">
+                <p className="gameplay__text url" data-aos="fade-left">
                   FitBurn is going to disrupt the whole fitness industry with
                   the world’s first burn-to-earn
                 </p>
               </div>
 
-              <div className="gameplay__cardbox"
-                   data-aos="flip-left"
-                   data-aos-offset="200"
-                   data-aos-delay="50"
-                   data-aos-duration="1000"
-                   data-aos-easing="ease-in-out"
+              <div className="gameplay__cardbox" data-aos="fade-left"
+                   // data-aos="flip-left"
+                   // data-aos-offset="200"
+                   // data-aos-delay="50"
+                   // data-aos-duration="1000"
+                   // data-aos-easing="ease-in-out"
               >
                 <div className="cardbox__left">
                   <img src={gameplayLoading} alt="" />
                 </div>
-                <div className="cardbox__right grid grid-cols-2 gap-7">
+                <div className="cardbox__right grid grid-cols-2 gap-7" data-aos="fade-left">
                   <div className="cardbox__card">
                     <p>common</p>
                   </div>
@@ -58,34 +58,34 @@ function AboutGamePlay() {
                 <img src={phone} alt="phone"/>
               </div>
               <ul className="gameplay__right-list"
-                  data-aos="flip-right"
-                  data-aos-offset="200"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
+                  // data-aos="flip-right"
+                  // data-aos-offset="200"
+                  // data-aos-delay="50"
+                  // data-aos-duration="1000"
+                  // data-aos-easing="ease-in-out"
               >
-                <li>
+                <li data-aos="fade-up">
                   <span>01</span>
                   <p>
                     Get your FitBurn NFT and join a GYM membership for free.
                   </p>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                   <span>02</span>
                   <p>
                     Hit the gym, wear your smartwatch and start your FitBurn
                     App.
                   </p>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                   <span>03</span>
                   <p>Perform your daily workout routine and burn calories.</p>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                   <span>04</span>
                   <p>For every burned calorie, earn Calorie tokens.</p>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                   <span>05</span>
                   <p>
                     Use the coin to trade, hold, upgrade your NFT, purchase

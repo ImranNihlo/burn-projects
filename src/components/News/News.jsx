@@ -56,13 +56,7 @@ function News() {
     <div className="news__wrapper">
       <div className="relative">
         <div className="news__box">
-          <h2 className="news__title relative"
-              data-aos="zoom-in"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-          >
+          <h2 className="news__title relative" data-aos="zoom-in">
             <span>News</span>
             <span className="relative">
               <img
@@ -75,11 +69,11 @@ function News() {
             <span>EVENTS</span>
           </h2>
           <div className="events__btns">
-            <div className="events__btn_wrapper">
+            <div className="events__btn_wrapper" data-aos="fade-right">
               <button className="btn__events">EVENTS</button>
             </div>
 
-            <div className="events__btn_wrapper">
+            <div className="events__btn_wrapper" data-aos="fade-left">
               <button className="btn__news">NEWS</button>
             </div>
           </div>

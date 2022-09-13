@@ -12,17 +12,19 @@ function Tokenomics() {
       <div className="tokenomics__wrapper">
         <div className="app__container">
           <div className="tokenomics" id="tokenomics">
-            <div className="tokenomics__left" data-aos="zoom-in"
+            <div className="tokenomics__left"
+                 data-aos="zoom-in"
                  data-aos-offset="200"
                  data-aos-delay="50"
                  data-aos-duration="2000"
-                 data-aos-easing="ease-in-out">
+                 data-aos-easing="ease-in-out"
+            >
               <div className="tokenomics__icon">
                 <img src={coin} alt="coin" className="coin"/>
               </div>
               <div className="tokenomics__left-content">
-                <Subtitle>our token</Subtitle>
-                <div className="tokenomics__title">
+                <Subtitle data-aos="fade-right">our token</Subtitle>
+                <div className="tokenomics__title" data-aos="fade-left">
                   <p>CAL</p>
                   <p className="flex items-center">
                     <span>T </span>
@@ -38,44 +40,44 @@ function Tokenomics() {
             </div>
             <div className="tokenomics__right">
               <ul className="tokenomics__right-list"
-                  data-aos="flip-right"
-                  data-aos-offset="200"
-                  data-aos-delay="50"
-                  data-aos-duration="4000"
-                  data-aos-easing="ease-in-out"
+                  // data-aos="flip-right"
+                  // data-aos-offset="200"
+                  // data-aos-delay="50"
+                  // data-aos-duration="4000"
+                  // data-aos-easing="ease-in-out"
               >
-                <li>
+                <li data-aos="fade-up">
                   <h2>Buying products and services on the platform</h2>
                   <p>(gym memberships, supplements, accessories, etc.)</p>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                   <h2>Staking for:</h2>
                   <ul>
-                    <li>
+                    <li data-aos="fade-up">
                       <span>
                         <img src={exitIcon} alt="exit" />
                       </span>
                       <span>Rewards in CAL token</span>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <span>
                         <img src={exitIcon} alt="exit" />
                       </span>
                       <span>A multiplier for the calories burned</span>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <span>
                         <img src={exitIcon} alt="exit" />
                       </span>
                       <span>Fees and product/service price reductions</span>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <span>
                         <img src={exitIcon} alt="exit" />
                       </span>
                       <span>Entry to exclusive/VIP events</span>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <span>
                         <img src={exitIcon} alt="exit" />
                       </span>
@@ -83,22 +85,22 @@ function Tokenomics() {
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                   <h2>Rewards distribution for:</h2>
                   <ul>
-                    <li>
+                    <li data-aos="fade-up">
                       <span>
                         <img src={exitIcon} alt="exit" />
                       </span>
                       <span>Active NFT holders </span>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <span>
                         <img src={exitIcon} alt="exit" />
                       </span>
                       <span>Token stakers</span>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                       <span>
                         <img src={exitIcon} alt="exit" />
                       </span>

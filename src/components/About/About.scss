@@ -148,6 +148,9 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 47px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
   .about__second__title-primary {
     color: #ef1000;
@@ -627,12 +630,6 @@
     }
   }
 
-  .about__second__title {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
   .about__subtitle {
     justify-content: center;
   }
@@ -893,6 +890,10 @@
       background-position: calc(0% - 800px) calc(0% - 40px);
       padding-top: 100px;
       padding-bottom: 0;
+    }
+
+    .about__wrapper-right-line, .about__wrapper-left-line, .second__about-line-left, .second__about-line-right {
+      display: none;
     }
 
     .about__wrapper::before {

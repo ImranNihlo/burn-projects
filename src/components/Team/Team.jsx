@@ -127,16 +127,10 @@ function Team() {
         <div className="team__wrapper-bg"/>
         <div className="team" id="team">
           <div className="app__container">
-            <div className="team__subtitle">
+            <div className="team__subtitle" data-aos="zoom-in">
               <Subtitle>Team</Subtitle>
             </div>
-            <h1 className="team__title"
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-            >
+            <h1 className="team__title" data-aos="zoom-in">
               <span className="team__title-primary">Fit</span>
               <span>Burn</span>
               <p>
@@ -170,6 +164,7 @@ function Team() {
               {carousel__data.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div
+                    data-aos="zoom-in"
                     className={
                       item.id === activeIndex + 1
                         ? "team__card-active"
@@ -236,13 +231,7 @@ function Team() {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <h2 className="team__title-advisors"
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-            >Advisors</h2>
+            <h2 className="team__title-advisors" data-aos="zoom-in">Advisors</h2>
             <Swiper
               effect={"flip "}
               grabCursor={true}
@@ -268,6 +257,7 @@ function Team() {
               {carousel__advisors.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div
+                    data-aos="zoom-in"
                     className={
                       item.id === activeSwipe + 1
                         ? "team__card-active"
@@ -335,39 +325,6 @@ function Team() {
               ))}
             </Swiper>
           </div>
-          {/*<div className="team__advisors">*/}
-          {/*  <h2 className="team__title-advisors">Advisors</h2>*/}
-          {/*  <div className="team__card-advisors relative">*/}
-          {/*    <div className="team__card__wrapper">*/}
-          {/*      <img src={TeamMember2} alt="team" />*/}
-          {/*      <h3>Özlem Kaçmaz</h3>*/}
-          {/*      <p>*/}
-          {/*        FitBurn is going to disrupt the whole fitness industry with*/}
-          {/*        the world’s first burn-to-earn*/}
-          {/*      </p>*/}
-          {/*      <img*/}
-          {/*        src={angle}*/}
-          {/*        alt="angle"*/}
-          {/*        className="absolute w-7 h-6 top-0 left-0"*/}
-          {/*      />*/}
-          {/*      <img*/}
-          {/*        src={angle}*/}
-          {/*        alt="angle"*/}
-          {/*        className="absolute w-7 h-6 top-0 right-0 rotate-90"*/}
-          {/*      />*/}
-          {/*      <img*/}
-          {/*        src={angle}*/}
-          {/*        alt="angle"*/}
-          {/*        className="absolute w-7 h-6 bottom-0 right-0 rotate-180"*/}
-          {/*      />*/}
-          {/*      <img*/}
-          {/*        src={angle}*/}
-          {/*        alt="angle"*/}
-          {/*        className="absolute w-7 h-6 bottom-0 left-0 -rotate-90"*/}
-          {/*      />*/}
-          {/*    </div>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
         </div>
       </div>
     </>

@@ -23,15 +23,15 @@ function About() {
         <div className="about__wrapper-left-line"/>
         <div className="about app__container">
           <div className="about__left">
-            <div className="about__left__content" id="about">
+            <div className="about__left__content" id="about" data-aos="zoom-in">
               <Subtitle>about fitburn</Subtitle>
               <h1
                 className="about__title"
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
+                // data-aos="zoom-in"
+                // data-aos-offset="200"
+                // data-aos-delay="50"
+                // data-aos-duration="1000"
+                // data-aos-easing="ease-in-out"
               >Burn To EARN</h1>
               <p className="about__text">
                 Get paid for every drop of your sweat .
@@ -39,12 +39,12 @@ function About() {
               <Button>Let’s Burn</Button>
             </div>
           </div>
-          <div className="about__right"
-               data-aos="fade-up"
-               data-aos-offset="200"
-               data-aos-delay="50"
-               data-aos-duration="1000"
-               data-aos-easing="ease-in-out"
+          <div className="about__right" data-aos="zoom-in"
+               // data-aos="fade-up"
+               // data-aos-offset="200"
+               // data-aos-delay="50"
+               // data-aos-duration="1000"
+               // data-aos-easing="ease-in-out"
           >
             <Carousel />
           </div>
