@@ -3,11 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: calc(0% - 100px) calc(0% - 200px);
-  padding-top: 160px;
+  padding-top: 10px;
 }
 
 .social__title {
-  font-family: "Monument Extended", sans-serif;
+  font-family: "Monument Extended";
   font-style: normal;
   font-weight: 400;
   font-size: 63px;
@@ -15,26 +15,21 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  //margin-top: 160px;
+  margin-top: 160px;
   background-color: transparent;
-}
-
-.social__box-position {
-  position: relative;
 }
 
 .social__box {
   width: 738px;
-  position: absolute;
-  bottom: 150px;
-  left: 200px;
-  //height: 800px;
+  height: 800px;
+  position: relative;
+  bottom: 90px;
   margin: 0 auto;
-  //background-image: url("../../assets/images/social-bg.png");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: center;
-  //padding-top: 490px;
+  background-image: url("../../assets/images/social-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 490px;
 
   div {
     animation: circle 8s linear infinite;
@@ -91,19 +86,9 @@
   }
 }
 
-.social-img {
-  width: 700px;
-  margin: auto;
-  margin-top: -100px;
-}
-
 @media only screen and (max-width: 850px) {
   .social__title {
     font-size: 36px;
-  }
-
-  .social-img {
-    margin-top: 0;
   }
 
   .social__box {
@@ -137,6 +122,7 @@
     background-size: contain;
     background-position: center;
     padding-top: 280px;
+    bottom: 0;
   }
 
   @keyframes circle {
@@ -153,4 +139,3 @@
     }
   }
 }
-

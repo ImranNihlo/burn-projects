@@ -15,9 +15,11 @@ import "./layout/Navbar.scss";
 import Button from "./UI/Button/Button";
 import logo from "./assets/logo/logo.svg";
 import Noise from "./components/Noise/Noise";
+import Sidebar from './components/Sidebar/Sidebar'
 
 function App() {
   const [colorChange, setColorchange] = useState(false);
+  const [open, setOpen] = useState(true);
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
       setColorchange(true);
@@ -79,9 +81,23 @@ function App() {
               </ul>
               <Button>Let’s Burn</Button>
             </div>
+            <button className="menu__btn" onClick={() => setOpen(!open)}>
+              <svg
+                width="32"
+                height="33"
+                viewBox="0 0 32 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M4 8.98816H28" stroke="white" />
+                <path d="M4 16.9882H28" stroke="white" />
+                <path d="M4 24.9882H28" stroke="white" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
+      <Sidebar open={open} setOpen={setOpen} />
       <Noise>
         <Hero />
         <About />

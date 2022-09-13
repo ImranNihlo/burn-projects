@@ -128,7 +128,52 @@ function Roadmap() {
             data-aos-easing="ease-in-out"
         >Roadmap</h2>
         <div className="app__container">
-          <div className="flex" key={roadmap[active - 1].id} timeout={500}>
+          <div className="roadmap__res">
+            {roadmap.map((res) => (
+              <div className="roadmap__res-box" data-aos="zoom-in">
+                <div className="roadmap__res-top">
+                  <p>0{res.id}</p>
+                  <img src={line} alt="line" height="6" />
+                </div>
+                <div className="roadmap__res-card">
+                  <img src={res.image} alt={res.title} />
+                </div>
+                <img
+                  src={res.icon}
+                  alt={res.title}
+                  width="32"
+                  height="56"
+                  className="mt-6"
+                />
+                <h3 className="roadmap__res-title">{res.title}</h3>
+                {res.text ? (
+                  <p className="roadmap__res-text">{res?.text}</p>
+                ) : null}
+
+                <ul className="roadmap__res-list">
+                  {res.list.map((list, i) => (
+                    <li key={i}>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="red"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                      {list}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="flex roadmap__box" key={roadmap[active - 1].id} timeout={500}>
             <div className="roadmap__card relative px-[21px] py-[51px] "
                  data-aos="flip-left"
                  data-aos-offset="200"

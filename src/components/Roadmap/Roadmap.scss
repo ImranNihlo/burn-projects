@@ -54,6 +54,10 @@
   }
 }
 
+.roadmap__res {
+  display: none;
+}
+
 .roadmap__number-list {
   margin-right: 50px;
   ul {
@@ -172,7 +176,7 @@
 
 @media only screen and (max-width: 900px) {
   .roadmap {
-    padding: 0;
+    padding: 100px 0 0 0;
     margin-bottom: 50px;
     z-index: 999;
     background-image: url("../../assets/images/hero-bg-red.png");

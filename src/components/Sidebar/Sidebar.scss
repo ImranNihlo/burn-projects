@@ -1,0 +1,113 @@
+.sidebar__wrapper {
+  position: absolute;
+  top: 0px;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 40px 20px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 1111;
+  transition: all 0.3s ease-in-out;
+  .sidebar__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+
+    .sidebar__logo {
+      position: relative;
+      left: -20px;
+    }
+
+    button {
+      background-image: url("../../assets/images/menu-btn-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      p {
+        font-family: "Monument Extended";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 104%;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.sidebar__wrapper-disabled {
+  position: absolute;
+  transform: rotateX(0);
+  top: 0px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 40px 20px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 1111;
+  .sidebar__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+
+    .sidebar__logo {
+      position: relative;
+      left: -20px;
+    }
+
+    button {
+      background-image: url("../../assets/images/menu-btn-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      p {
+        font-family: "Monument Extended";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 104%;
+        color: #ffffff;
+      }
+    }
+  }
+}

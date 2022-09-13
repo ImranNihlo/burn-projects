@@ -31,6 +31,9 @@ function Tokenomics() {
                   </p>
                   <p>SETUP</p>
                 </div>
+                <div className="tokemonics__btn-res" data-aos="fade-right">
+                  <Button>Let's Burn</Button>
+                </div>
               </div>
             </div>
             <div className="tokenomics__right">

@@ -60,6 +60,10 @@
   margin-left: 32px;
 }
 
+.menu__btn {
+  display: none;
+}
+
 @media only screen and (max-width: 973px) {
   .nav__menu {
     display: none;
