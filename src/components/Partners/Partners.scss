@@ -10,6 +10,18 @@
   position: relative;
 }
 
+.second__about-line-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 790px;
+  height: 480px;
+  background-image: url("../../assets/images/line-frame.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(180deg) translateY(0) translateX(-200px);
+}
+
 .partners__title-box {
   width: 135px;
   margin: 0 auto;
@@ -52,6 +64,7 @@
   width: 95%;
   transform: rotate(7deg);
   .swiper-slide {
+    cursor: grab;
     margin-top: 85px;
     text-align: center;
     font-size: 18px;

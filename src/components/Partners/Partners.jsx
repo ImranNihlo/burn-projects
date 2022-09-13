@@ -32,8 +32,9 @@ function Partners() {
 
   return (
     <>
-      <div className="partners__wrapper">
-        <div className="partners app__container text-center" id="partners" data-aos="zoom-in">
+      <div className="partners__wrapper" id="partners">
+        <div className="second__about-line-right"></div>
+        <div className="partners app__container text-center" data-aos="zoom-in">
           <div className="partners__title-box" >
             <Subtitle>partners</Subtitle>
           </div>

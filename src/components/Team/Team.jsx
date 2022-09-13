@@ -123,9 +123,9 @@ function Team() {
 
   return (
     <>
-      <div className="team__wrapper">
+      <div className="team__wrapper" id="team">
         <div className="team__wrapper-bg"/>
-        <div className="team" id="team">
+        <div className="team">
           <div className="app__container">
             <div className="team__subtitle" data-aos="zoom-in">
               <Subtitle>Team</Subtitle>
@@ -139,189 +139,193 @@ function Team() {
                 <span> faces </span>
               </p>
             </h1>
-            <Swiper
-              effect={"flip "}
-              grabCursor={true}
-              navigation
-              centeredSlides={true}
-              slidesPerView={"auto"}
-              coverflowEffect={{
-                scale: 0.5,
-                rotate: 0,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-              }}
-              pagination={false}
-              modules={[EffectFlip, Pagination, Navigation]}
-              className="myTeamSwiper"
-              onSlideChange={(swiper) => {
-                setActiveIndex(swiper.activeIndex);
-              }}
-              initialSlide="1"
-            >
-              {carousel__data.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <div
-                    className={
-                      item.id === activeIndex + 1
-                        ? "team__card-active"
-                        : "team__card"
-                    }
-                  >
+            <div data-aos="zoom-in">
+              <Swiper
+                effect={"flip "}
+                grabCursor={true}
+                navigation
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                  scale: 0.5,
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                }}
+                pagination={false}
+                modules={[EffectFlip, Pagination, Navigation]}
+                className="myTeamSwiper"
+                onSlideChange={(swiper) => {
+                  setActiveIndex(swiper.activeIndex);
+                }}
+                initialSlide="1"
+              >
+                {carousel__data.map((item) => (
+                  <SwiperSlide key={item.id}>
                     <div
                       className={
-                        item.id === activeIndex + 1 ? "team__card__wrapper" : ""
+                        item.id === activeIndex + 1
+                          ? "team__card-active"
+                          : "team__card"
                       }
                     >
-                      <img
-                        src={
-                          item.id === activeIndex + 1
-                            ? item.activeImage
-                            : item.image
+                      <div
+                        className={
+                          item.id === activeIndex + 1 ? "team__card__wrapper" : ""
                         }
-                        alt="fire"
-                      />
-                      <h3>
-                        {item.id === activeIndex + 1
-                          ? item.activeTitle
-                          : item.activeTitle}
-                      </h3>
-                      <p>{item.id === activeIndex + 1 ? item.text : ""}</p>
+                      >
+                        <img
+                          src={
+                            item.id === activeIndex + 1
+                              ? item.activeImage
+                              : item.image
+                          }
+                          alt="fire"
+                        />
+                        <h3>
+                          {item.id === activeIndex + 1
+                            ? item.activeTitle
+                            : item.activeTitle}
+                        </h3>
+                        <p>{item.id === activeIndex + 1 ? item.text : ""}</p>
+                      </div>
                     </div>
-                  </div>
-                  <img
-                    src={angle}
-                    alt="angle"
-                    className={
-                      item.id === activeIndex + 1
-                        ? "absolute w-7 h-6 top-0 left-0"
-                        : "hidden"
-                    }
-                  />
-                  <img
-                    src={angle}
-                    alt="angle"
-                    className={
-                      item.id === activeIndex + 1
-                        ? "absolute w-7 h-6 top-0 right-0 rotate-90"
-                        : "hidden"
-                    }
-                  />
-                  <img
-                    src={angle}
-                    alt="angle"
-                    className={
-                      item.id === activeIndex + 1
-                        ? "absolute w-7 h-6 bottom-0 right-0 rotate-180"
-                        : "hidden"
-                    }
-                  />
-                  <img
-                    src={angle}
-                    alt="angle"
-                    className={
-                      item.id === activeIndex + 1
-                        ? "absolute w-7 h-6 bottom-0 left-0 -rotate-90"
-                        : "hidden"
-                    }
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                    <img
+                      src={angle}
+                      alt="angle"
+                      className={
+                        item.id === activeIndex + 1
+                          ? "absolute w-7 h-6 top-0 left-0"
+                          : "hidden"
+                      }
+                    />
+                    <img
+                      src={angle}
+                      alt="angle"
+                      className={
+                        item.id === activeIndex + 1
+                          ? "absolute w-7 h-6 top-0 right-0 rotate-90"
+                          : "hidden"
+                      }
+                    />
+                    <img
+                      src={angle}
+                      alt="angle"
+                      className={
+                        item.id === activeIndex + 1
+                          ? "absolute w-7 h-6 bottom-0 right-0 rotate-180"
+                          : "hidden"
+                      }
+                    />
+                    <img
+                      src={angle}
+                      alt="angle"
+                      className={
+                        item.id === activeIndex + 1
+                          ? "absolute w-7 h-6 bottom-0 left-0 -rotate-90"
+                          : "hidden"
+                      }
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
             <h2 className="team__title-advisors" data-aos="zoom-in">Advisors</h2>
-            <Swiper
-              effect={"flip "}
-              grabCursor={true}
-              navigation
-              centeredSlides={true}
-              slidesPerView={"auto"}
-              coverflowEffect={{
-                scale: 0.5,
-                rotate: 0,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-              }}
-              pagination={false}
-              modules={[EffectFlip, Pagination, Navigation]}
-              className="myTeamSwiper"
-              onSlideChange={(swiper) => {
-                setActiveSwipe(swiper.activeIndex);
-              }}
-              initialSlide="1"
-            >
-              {carousel__advisors.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <div
-                    className={
-                      item.id === activeSwipe + 1
-                        ? "team__card-active"
-                        : "team__card"
-                    }
-                  >
+            <div data-aos="zoom-in">
+              <Swiper
+                effect={"flip "}
+                grabCursor={true}
+                navigation
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                  scale: 0.5,
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                }}
+                pagination={false}
+                modules={[EffectFlip, Pagination, Navigation]}
+                className="myTeamSwiper"
+                onSlideChange={(swiper) => {
+                  setActiveSwipe(swiper.activeIndex);
+                }}
+                initialSlide="1"
+              >
+                {carousel__advisors.map((item) => (
+                  <SwiperSlide key={item.id}>
                     <div
                       className={
-                        item.id === activeSwipe + 1 ? "team__card__wrapper" : ""
+                        item.id === activeSwipe + 1
+                          ? "team__card-active"
+                          : "team__card"
                       }
                     >
-                      <img
-                        src={
-                          item.id === activeSwipe + 1
-                            ? item.activeImage
-                            : item.image
+                      <div
+                        className={
+                          item.id === activeSwipe + 1 ? "team__card__wrapper" : ""
                         }
-                        alt="fire"
-                      />
-                      <h3>
-                        {item.id === activeSwipe + 1
-                          ? item.activeTitle
-                          : item.activeTitle}
-                      </h3>
-                      <p>{item.id === activeSwipe + 1 ? item.text : ""}</p>
+                      >
+                        <img
+                          src={
+                            item.id === activeSwipe + 1
+                              ? item.activeImage
+                              : item.image
+                          }
+                          alt="fire"
+                        />
+                        <h3>
+                          {item.id === activeSwipe + 1
+                            ? item.activeTitle
+                            : item.activeTitle}
+                        </h3>
+                        <p>{item.id === activeSwipe + 1 ? item.text : ""}</p>
+                      </div>
                     </div>
-                  </div>
-                  <img
-                    src={angle}
-                    alt="angle"
-                    className={
-                      item.id === activeSwipe + 1
-                        ? "absolute w-7 h-6 top-0 left-0"
-                        : "hidden"
-                    }
-                  />
-                  <img
-                    src={angle}
-                    alt="angle"
-                    className={
-                      item.id === activeSwipe + 1
-                        ? "absolute w-7 h-6 top-0 right-0 rotate-90"
-                        : "hidden"
-                    }
-                  />
-                  <img
-                    src={angle}
-                    alt="angle"
-                    className={
-                      item.id === activeSwipe + 1
-                        ? "absolute w-7 h-6 bottom-0 right-0 rotate-180"
-                        : "hidden"
-                    }
-                  />
-                  <img
-                    src={angle}
-                    alt="angle"
-                    className={
-                      item.id === activeSwipe + 1
-                        ? "absolute w-7 h-6 bottom-0 left-0 -rotate-90"
-                        : "hidden"
-                    }
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                    <img
+                      src={angle}
+                      alt="angle"
+                      className={
+                        item.id === activeSwipe + 1
+                          ? "absolute w-7 h-6 top-0 left-0"
+                          : "hidden"
+                      }
+                    />
+                    <img
+                      src={angle}
+                      alt="angle"
+                      className={
+                        item.id === activeSwipe + 1
+                          ? "absolute w-7 h-6 top-0 right-0 rotate-90"
+                          : "hidden"
+                      }
+                    />
+                    <img
+                      src={angle}
+                      alt="angle"
+                      className={
+                        item.id === activeSwipe + 1
+                          ? "absolute w-7 h-6 bottom-0 right-0 rotate-180"
+                          : "hidden"
+                      }
+                    />
+                    <img
+                      src={angle}
+                      alt="angle"
+                      className={
+                        item.id === activeSwipe + 1
+                          ? "absolute w-7 h-6 bottom-0 left-0 -rotate-90"
+                          : "hidden"
+                      }
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           </div>
         </div>
       </div>

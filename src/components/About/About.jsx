@@ -18,12 +18,12 @@ import AboutSecond from './AboutSecond'
 function About() {
   return (
     <div className="relative">
-      <div className="about__wrapper">
+      <div className="about__wrapper" id="about">
         <div className="about__wrapper-right-line"/>
         <div className="about__wrapper-left-line"/>
         <div className="about app__container">
           <div className="about__left">
-            <div className="about__left__content" id="about" data-aos="zoom-in">
+            <div className="about__left__content" data-aos="zoom-in">
               <Subtitle>about fitburn</Subtitle>
               <h1
                 className="about__title"

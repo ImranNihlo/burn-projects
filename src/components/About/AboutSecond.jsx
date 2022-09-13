@@ -11,7 +11,9 @@ import CarouselImage2 from '../../assets/images/carousel/carousel-2.png'
 
 function AboutSecond (props) {
   return (
-    <div className="second__about-wrapper">
+    <div className="second__about-wrapper" id="about-second">
+      <div className="second__about-line-left"></div>
+      <div className="second__about-line-right"></div>
       <div className="app__container text-center">
         <div className="second__about">
           <div className="second__about__subtitle" data-aos="fade-left">

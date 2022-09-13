@@ -9,9 +9,9 @@ import coin from "../../assets/images/coin.png"
 function Tokenomics() {
   return (
     <div className="relative">
-      <div className="tokenomics__wrapper">
+      <div className="tokenomics__wrapper" id="tokenomics">
         <div className="app__container">
-          <div className="tokenomics" id="tokenomics">
+          <div className="tokenomics">
             <div className="tokenomics__left"
                  data-aos="zoom-in"
                  data-aos-offset="200"

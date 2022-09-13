@@ -26,8 +26,8 @@ function Faq() {
     },
   ];
   return (
-    <div className="faq__bg">
-      <div className="relative" id="faq">
+    <div className="faq__bg" id="faq">
+      <div className="relative">
         <div className="faq__wrapper">
           <div className="app__container" data-aos="zoom-in">
             <div className="faq ">

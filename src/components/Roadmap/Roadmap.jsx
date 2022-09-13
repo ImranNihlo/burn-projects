@@ -115,9 +115,9 @@ function Roadmap() {
   };
 
   return (
-    <div className="roadmap__wrapper">
+    <div className="roadmap__wrapper" id="roadmap">
       <div className="roadmap pt-[130px]">
-        <div className="flex justify-center" id="roadmap">
+        <div className="flex justify-center">
           <Subtitle>Our Way</Subtitle>
         </div>
         <h2 className="roadmap__title mb-16"

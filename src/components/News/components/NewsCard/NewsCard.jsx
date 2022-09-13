@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 function NewsCard(props) {
   return (
     <div>
-      <div className="news__card">
+      <div className="news__card" data-aos="zoom-in">
         <div className="subtitle flex items-center gap-3 absolute top-2 left-[60px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"

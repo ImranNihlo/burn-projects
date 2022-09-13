@@ -13,9 +13,9 @@ function Social() {
     });
   }, []);
   return (
-    <div className="social__wrapper">
+    <div className="social__wrapper" id="social">
       <div className="app__container" data-aos="zoom-in">
-        <div className="social__title" id="social">
+        <div className="social__title">
           <h2>join fitburn</h2>
           <h2>in social MEDIA</h2>
         </div>
