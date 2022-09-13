@@ -182,9 +182,9 @@
   width: 100%;
   background-color: transparent;
   .swiper-slide {
-    width: 270px;
+    width: 290px;
     height: 320px;
-    margin: 0 30px;
+    margin: 0 1px;
     padding: 100px 0;
     background-position: center;
     background-size: cover;
@@ -822,8 +822,9 @@
     }
 
     .second__about-line-right {
+      width: 450px;
       height: 350px;
-      transform: rotate(190deg) translateY(20px) translateX(-252px);
+      transform: rotate(168deg) translateY(61px) translateX(-217px);
     }
 
     .second__about-line-left {
@@ -835,11 +836,11 @@
     .about__wrapper-left-line {
       bottom: 0;
       height: 300px;
-      transform: rotate(40deg) translateY(220px) translateX(-280px);
+      transform: rotate(13deg) translateY(90px) translateX(-417px);
     }
 
     .about__wrapper-right-line {
-      height: 200px;
+      transform: rotate(170deg) translateY(0px) translateX(-368px);
     }
 
     .second__about-text {
@@ -883,8 +884,8 @@
     }
 
     .gameplay__phone {
-      right: 295px;
-      top: 97px;
+      right: 195px;
+      top: 92px;
     }
 
     //.second__about-wrapper::before {

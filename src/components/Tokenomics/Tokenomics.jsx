@@ -10,6 +10,7 @@ function Tokenomics() {
   return (
     <div className="relative">
       <div className="tokenomics__wrapper" id="tokenomics">
+        <div className="tokenomics__wrapper-union"/>
         <div className="app__container">
           <div className="tokenomics">
             <div className="tokenomics__left"

@@ -8,6 +8,7 @@
   background-size: cover;
   background-position: calc(0% - 100px) calc(0% - 50px);
   position: relative;
+  overflow: hidden;
 }
 
 .partners__about-line-right {
@@ -166,13 +167,16 @@
     padding-top: 20px;
   }
 
+  .partners__about-line-right {
+    right: 0;
+    top: -193px;
+    width: 450px;
+    height: 420px;
+    transform: rotate(191deg) translateY(0) translateX(-200px);
+  }
+
   .partners__title {
     font-size: 36px;
-  }
-  .swiper__partners {
-    .swiper-wrapper {
-      transform: translate3d(100px, 0, 0)!important;
-    }
   }
 
   .partners__subtitle {

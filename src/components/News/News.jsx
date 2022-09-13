@@ -81,8 +81,8 @@ function News() {
           </div>
           <div className="events__slider-box">
             <div className="events__slider">
-              {news.map((item) => (
-                <NewsCard item={item} />
+              {news.map((item, id) => (
+                <NewsCard item={item} id={id}/>
               ))}
             </div>
             <button className="btn__more-news">

@@ -73,10 +73,12 @@
 
 @media only screen and (max-width: 991px) {
   .faq {
-    width: 100%;
+    width: 90%;
     margin-top: 0;
     padding: 50px 0;
     clip-path: polygon(0 0, 90% 0, 100% 30px, 100% 100%, 0 100%, 0% 50%);
+    background: linear-gradient(180deg, rgba(255, 224, 188, 0.264) 0%, rgba(255, 232, 205, 0.064) 99.79%);
+    backdrop-filter: blur(57.6819px);
   }
 
   .faq__bg {

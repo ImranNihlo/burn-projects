@@ -39,7 +39,16 @@
   }
 }
 
+.news__card_1, .news__card_3, .news__card_5 {
+  background-image: url("../../../../assets/images/Group 1171274732.png")!important;
+}
+
 @media only screen and (max-width: 768px) {
+
+  .news__card_1, .news__card_3, .news__card_5 {
+    background-image: url("../../../../assets/images/Group 1171274732.png");
+  }
+
   .news__card {
     width: 292px;
     height: 288px;
