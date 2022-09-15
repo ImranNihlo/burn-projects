@@ -2,6 +2,7 @@ import React from "react";
 import gameplayLoading from "../../assets/images/loading.png";
 import Subtitle from "../../UI/Subtitle/Subtitle";
 import phone from "../../assets/images/fhone.png"
+import Maks_group from "../../assets/images/Maks_group.png"
 
 function AboutGamePlay() {
   return (
@@ -54,9 +55,9 @@ function AboutGamePlay() {
               </div>
             </div>
             <div className="gameplay__right">
-              <div className="gameplay__phone">
-                <img src={phone} alt="phone"/>
-              </div>
+              {/*<div className="gameplay__phone">*/}
+              {/*  <img src={phone} alt="phone"/>*/}
+              {/*</div>*/}
               <ul className="gameplay__right-list"
                   // data-aos="flip-right"
                   // data-aos-offset="200"
@@ -64,28 +65,43 @@ function AboutGamePlay() {
                   // data-aos-duration="1000"
                   // data-aos-easing="ease-in-out"
               >
-                <li data-aos="fade-up">
+                <li data-aos="fade-up" className="right-list-li1">
+                  <div className="maks">
+                    <img src={Maks_group} alt="phone"/>
+                  </div>
                   <span>01</span>
                   <p>
                     Get your FitBurn NFT and join a GYM membership for free.
                   </p>
                 </li>
-                <li data-aos="fade-up">
+                <li data-aos="fade-up" className="right-list-li2">
+                  <div className="gameplay__phone">
+                    <img src={phone} alt="phone"/>
+                  </div>
                   <span>02</span>
                   <p>
                     Hit the gym, wear your smartwatch and start your FitBurn
                     App.
                   </p>
                 </li>
-                <li data-aos="fade-up">
+                <li data-aos="fade-up" className="right-list-li3">
+                  <div className="gameplay__phone">
+                    <img src={phone} alt="phone"/>
+                  </div>
                   <span>03</span>
                   <p>Perform your daily workout routine and burn calories.</p>
                 </li>
-                <li data-aos="fade-up">
+                <li data-aos="fade-up" className="right-list-li4">
+                  <div className="gameplay__phone">
+                    <img src={phone} alt="phone"/>
+                  </div>
                   <span>04</span>
                   <p>For every burned calorie, earn Calorie tokens.</p>
                 </li>
-                <li data-aos="fade-up">
+                <li data-aos="fade-up" className="right-list-li5">
+                  <div className="maks">
+                    <img src={Maks_group} alt="phone"/>
+                  </div>
                   <span>05</span>
                   <p>
                     Use the coin to trade, hold, upgrade your NFT, purchase
